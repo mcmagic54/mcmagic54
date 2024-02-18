@@ -24,13 +24,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $contenuEmail .= "Date: $date\n";
   $contenuEmail .= "Message: $message\n";
   
-  $headers = array
+  $headers = implode('\n', array
   (
-      'Content-Type' => 'text/html; charset="UTF-8";',
-      'From' => $email,
-      'Reply-To' => $email,
-      'X-Mailer' => 'PHP/' . phpversion(),
-  );
+      'Content-Type: text/html; charset=utf-8',
+      'From: ' . $email,
+      'Reply-To: ' . $email,
+      'X-Mailer: PHP/' . phpversion(),
+  ));
 
   // Envoi de l'e-mail
   if (mail($destinataire, $sujetEmail, $contenuEmail, $headers)) {
