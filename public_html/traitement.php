@@ -23,10 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   $headers = array
   (
-      'Content-Type' => 'text/html; charset="UTF-8";',
+      'Content-Type' => 'text/html; charset=utf-8',
       'From' => $email,
       'Reply-To' => $email,
-      'X-Mailer' => 'PHP/' . phpversion(),
   );
 
   // Envoi de l'e-mail
@@ -39,4 +38,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Une erreur est survenue lors de l'envoi de l'e-mail.";
   }
 }
-?>
