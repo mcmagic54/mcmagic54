@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x:  hidden;
+}
+
+section#contact {
+    background-image: url(/Image/test\ fond.jpg);
+    
+    padding: 100px 15px;
+    border-top: 15px solid black;
+    border-bottom: 15px solid black;
+    
+
+}
+
+section#contact .container {
+   max-width: 800px;
+   margin: 0px auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background-color: white;
+   padding: 10px;
+   border-radius: 15px;
+   box-shadow: 0px 10px 50px -10px #d6d6d6a3;
+}
+section#contact .container .title {
+    text-align: center;
+    color: rgb(118, 0, 0);
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+section#contact .container .title h6{
+    font-size: 1.2em;
+    margin:0;
+    
+}
+section#contact .container .title h3{
+    font-size: 2.8em;
+    margin-top:10px ;
+   
+    
+}
+
+section#contact .container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 700px;
+}
+
+section#contact .container form input{
+    width: 45%;
+
+}
+
+section#contact .container form input:hover,
+section#contact .container form textarea input:hover{
+    border-bottom: 2px solid #760000;
+    
+
+}
+
+
+section#contact .container form input,
+section#contact .container form textarea {
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+
+section#contact .container form textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 35px;
+    
+    
+}
+
+section#contact .container form button {
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #b14c4c;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+    margin-bottom: 50px;
+    
+}
+
+section#contact .container form button:hover {
+
+    transform:translateY(5px);
+}
+
+/*Pied de page*/
+
+footer{
+
+	background-color: rgb(40, 39, 39);
+  width: 100%;
+  height: 100px;
+  position: relative;
+  bottom: 1%;
+}
+
+
+ /* Positionnement logo/réseau sociaux */
+
+ .reseaux-sociaux img{
+    width:100px;
+    height:100px;
+  }
+  
+ .photo_facebook {
+    position: absolute;
+	left: 25%;
+  top: 0;
+  }
+  .tiktok {
+    position: absolute;
+	left: 40%;
+  top: 0;
+  }
+  
+  .photo_insta {
+    position: absolute;
+	right: 40%;
+  top: 0;
+  }
+  
+  .photo_youtube {
+    position: absolute;
+	right: 25%;
+  top: 0;
+  }
+
+  .CGU{
+
+    position: absolute;
+    left: 5%;
+    transform: (-50%,-50%);
+    }
+  
+    .CGU a {
+    width: 200px;
+    height: 60px;
+    font-size: 1.3rem;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 0;
+    border: 5px dotted white;
+    background: rgb(40, 39, 39);
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .CGU a::before {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    border-radius: 0% 0% 50% 50%;
+    z-index: -1;
+    transition: all 2s;
+    }
+    
+    .CGU a:hover::before {
+    top: 0px;
+    border-radius: 0;
+    }
+
+    .M_Legal{
+
+      position: absolute;
+      right: 5%;
+      transform: (-50%,-50%);
+      }
+    
+      .M_Legal a {
+      width: 200px;
+      height: 60px;
+      font-size: 1.3rem;
+      font-family: arial, sans-serif;
+      font-weight: 700;
+      position: relative;
+      color: white;
+      text-align: center;
+      z-index: 0;
+      border: 5px dotted white;
+      background: rgb(40, 39, 39);
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      
+      .M_Legal a::before {
+      content: '';
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      background: black;
+      border-radius:  0% 0% 100% 100%;
+      z-index: -1;
+      transition: all 2s;
+      }
+      
+      .M_Legal a:hover::before {
+      top: 0px;
+      border-radius: 0;
+      }
