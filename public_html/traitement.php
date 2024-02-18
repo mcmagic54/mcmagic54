@@ -10,6 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $date = htmlentities($_POST['date']);
   $message = htmlentities($_POST['message']);
 
+  // Restore line breaks
+  $message = str_replace('\n', '<br>', $message);
   // Configuration de l'e-mail
   $destinataire = 'contact@mcmagic.fr'; // Remplace avec ton adresse e-mail
   $sujetEmail = 'Nouveau message depuis le formulaire de contact du site';
