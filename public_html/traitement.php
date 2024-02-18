@@ -24,16 +24,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   (
       'MIME-Version: 1.0',
       'Content-Type: text/html; charset="UTF-8";',
-      //'Date: ' . date('r', $_SERVER['REQUEST_TIME']),
+      'Date: ' . date('r', $_SERVER['REQUEST_TIME']),
       'From: ' . $email,
       'Reply-To: ' . $email,
       'Return-Path: ' . $email,
-      //'X-Mailer: PHP v' . phpversion(),
-      //'X-Originating-IP: ' . $_SERVER['SERVER_ADDR'],
+      'X-Mailer: PHP v' . phpversion(),
+      'X-Originating-IP: ' . $_SERVER['SERVER_ADDR'],
   );
 
   // Envoi de l'e-mail
-  if (mail($destinataire, $sujetEmail, $contenuEmail, $headers)) {
+  if (mail($destinataire, $sujetEmail, $contenuEmail, implode("\n", $headers))) {
     // Redirection vers une page de confirmation si l'e-mail est envoyé avec succès
     header('Location: confirmation.html');
     exit();
