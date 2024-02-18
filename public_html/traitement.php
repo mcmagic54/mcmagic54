@@ -16,13 +16,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Configuration de l'e-mail
   $destinataire = 'contact@mcmagic.fr'; // Remplace avec ton adresse e-mail
   $sujetEmail = 'Nouveau message depuis le formulaire de contact du site';
-  $contenuEmail = "Nom: $nom\n";
-  $contenuEmail .= "E-mail: $email\n";
-  $contenuEmail .= "Téléphone: $telephone\n";
-  $contenuEmail .= "Sujet: $sujet\n";
-  $contenuEmail .= "Nature: $nature\n";
-  $contenuEmail .= "Date: $date\n";
-  $contenuEmail .= "Message: $message\n";
+  $contenuEmail = "Bonjour, vous avez reçu un nouveau message :<br>";
+  $contenuEmail .= "Nom: $nom<br>";
+  $contenuEmail .= "E-mail: $email<br>";
+  $contenuEmail .= "Téléphone: $telephone<br>";
+  $contenuEmail .= "Sujet: $sujet<br>";
+  $contenuEmail .= "Nature: $nature<br>";
+  $contenuEmail .= "Date: $date<br>";
+  $contenuEmail .= "Message: $message<br>";
   
   $headers = implode('\n', array
   (
