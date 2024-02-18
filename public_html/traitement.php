@@ -1,7 +1,4 @@
 <?php
-error_reporting(-1);
-ini_set('display_errors', 'On');
-set_error_handler("var_dump");
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   header('Content-Type: text/html; charset=utf-8');
   // Récupération des données du formulaire
