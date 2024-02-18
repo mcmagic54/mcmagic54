@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       'Content-Type: text/html; charset=utf-8',
       'From: ' . $email,
       'Reply-To: ' . $email,
+      'X-Mailer: PHP/' . phpversion(),
   ));
 
   // Envoi de l'e-mail
