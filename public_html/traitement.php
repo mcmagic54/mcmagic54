@@ -13,15 +13,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Configuration de l'e-mail
   $destinataire = 'contact@mcmagic.fr'; // Remplace avec ton adresse e-mail
   $sujetEmail = 'Nouveau message depuis le formulaire de contact du site';
-  $contenuEmail = "<h1>" . $sujet . "</h1>";
-  $contenuEmail .= "Bonjour, vous avez reçu un nouveau message :<br>";
-  $contenuEmail .= "Nom: $nom<br>";
-  $contenuEmail .= "E-mail: $email<br>";
-  $contenuEmail .= "Téléphone: $telephone<br>";
-  $contenuEmail .= "Sujet: $sujet<br>";
-  $contenuEmail .= "Nature: $nature<br>";
-  $contenuEmail .= "Date: $date<br>";
-  $contenuEmail .= "Message: <p>$message</p>";
+  $contenuEmail = "<h1>$sujet</h1><p>$message</p><table>";
+  $contenuEmail .= "<tr><th>Clé</th><th>Valeur</th></tr>";
+  $contenuEmail .= "<tr><td>Nom</td><td>$nom</td></tr>";
+  $contenuEmail .= "<tr><td>E-mail</td><td>$email</td></tr>";
+  $contenuEmail .= "<tr><td>Téléphone</td><td>$telephone</td></tr>";
+  $contenuEmail .= "<tr><td>Sujet</td><td>$sujet</td></tr>";
+  $contenuEmail .= "<tr><td>Nature</td><td>$nature</td></tr>";
+  $contenuEmail .= "<tr><td>Date</td><td>$date</td></tr>";
+  $contenuEmail .= "<tr><td>Message</td><td>$message</td></table>";
   
   $headers = implode('\n', array
   (
