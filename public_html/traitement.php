@@ -19,8 +19,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $contenuEmail .= "Nature: $nature\n";
   $contenuEmail .= "Date: $date\n";
   $contenuEmail .= "Message: $message\n";
-  $headers = "From: $email\r\n";
-  $headers .= "Reply-To: $email\r\n";
+  
+  $headers = array
+  (
+      'MIME-Version: 1.0',
+      'Content-Type: text/html; charset="UTF-8";',
+      'Date: ' . date('r', $_SERVER['REQUEST_TIME']),
+      'Message-ID: <' . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>',
+      'From: ' . $email,
+      'Reply-To: ' . $email,
+      'Return-Path: ' . $email,
+      'X-Mailer: PHP v' . phpversion(),
+      'X-Originating-IP: ' . $_SERVER['SERVER_ADDR'],
+  );
 
   // Envoi de l'e-mail
   if (mail($destinataire, $sujetEmail, $contenuEmail, $headers)) {
