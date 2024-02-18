@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  header('Content-Type: text/html; charset=utf-8');
   // Récupération des données du formulaire
   $nom = htmlentities($_POST['name']);
   $email = htmlentities($_POST['email']);
@@ -22,18 +23,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   $headers = array
   (
-      'MIME-Version: 1.0',
-      'Content-Type: text/html; charset="UTF-8";',
-      'Date: ' . date('r', $_SERVER['REQUEST_TIME']),
-      'From: ' . $email,
-      'Reply-To: ' . $email,
-      'Return-Path: ' . $email,
-      'X-Mailer: PHP v' . phpversion(),
-      'X-Originating-IP: ' . $_SERVER['SERVER_ADDR'],
+      'Content-Type' => 'text/html; charset="UTF-8";',
+      'From' => $email,
+      'Reply-To' => $email,
+      'X-Mailer' => 'PHP/' . phpversion(),
   );
 
   // Envoi de l'e-mail
-  if (mail($destinataire, $sujetEmail, $contenuEmail, implode("\n", $headers))) {
+  if (mail($destinataire, $sujetEmail, $contenuEmail, $headers)) {
     // Redirection vers une page de confirmation si l'e-mail est envoyé avec succès
     header('Location: confirmation.html');
     exit();
