@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $contenuEmail .= "<tr><td>Sujet</td><td>$sujet</td></tr>";
   $contenuEmail .= "<tr><td>Nature</td><td>$nature</td></tr>";
   $contenuEmail .= "<tr><td>Date</td><td>$date</td></tr>";
-  $contenuEmail .= "<tr><td>Message</td><td>$message</td></table>";
+  $contenuEmail .= "<tr><td>Message</td><td>$message</td></tr></table>";
   
   $headers = implode('\n', array
   (
