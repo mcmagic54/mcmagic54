@@ -3,10 +3,10 @@
     padding: 0;
     text-align: center;
   }
-  .navbar a {
-    color:white;
-  }
 
+  .navbar a {
+    color: white;
+  }
 
   .navbar .menu-hamburger {
     display: block;
@@ -25,7 +25,7 @@
     margin-left: -100%;
     transition: all 0.5s ease;
     border-bottom: 0 transparent;
-  } 
+  }
 
   .nav-links.mobile-menu {
     margin-left: 0;
@@ -36,16 +36,17 @@
     flex-direction: column;
     align-self: center;
   }
-  
+
   .navbar .logo {
     position: absolute;
     top: 50px;
     left: 50px;
-  
+
 
   }
+
   .navbar .nav-links ul li {
-    margin: 25px 0; 
+    margin: 25px 0;
     font-size: 1em;
   }
 
@@ -58,15 +59,17 @@
 
   .sub-menu2 li {
     left: 90%;
-    top: -75px;;
+    top: -75px;
+    ;
   }
+
   .sub-menu3 li {
     left: 90%;
     top: -75px;
   }
 
-  
- 
+
+
 
   .bordure_noir {
     position: relative;
@@ -75,172 +78,179 @@
     height: 500px;
     background-color: black;
     border: double 15px white;
-    }
+  }
 
-    .slider {
-      position: absolute;
-      top: 22%;
-      width: 90%;
-      height: 50%;
-      margin: 0 auto;
-      overflow: hidden;
-      }
-      .slider-text {
+  .slider {
+    position: absolute;
+    top: 22%;
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 
-        text-align: center;
-        color: rgb(12, 12, 11);
-        position: absolute;
-        right: 60%;
-        left: 5%;
-        width: 90%;
-        height: 14%;
-        top: 5%;
-        background-color: whitesmoke;
-        font-size: auto;
-        font-family: 'Elephant';
-    
-      }
-    
-      .slider-text2 {
-  
-      right: 60%;
-      left: 5%;
-      width: 90%;
-      height: 20%;
-      top: 74%;
-      font-size: 20px;
-    }
+  .slider-text {
 
-    .slider img {
+    text-align: center;
+    color: rgb(12, 12, 11);
+    position: absolute;
+    right: 60%;
+    left: 5%;
+    width: 90%;
+    height: 14%;
+    top: 5%;
+    background-color: whitesmoke;
+    font-size: auto;
+    font-family: 'Elephant';
+
+  }
+
+  .slider-text2 {
+
+    right: 60%;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+    top: 74%;
+    font-size: 20px;
+  }
+
+  .slider img {
     width: 90%;
     height: 80%;
 
-    }
+  }
 
-    .imagelogo {top: 10px;}
-
-    
-    
-    
-      .reseaux-sociaux img{
-        width:35px;
-        height:35px;
-      }
-    
-    
-    
-      .photo_facebook {
-        position: absolute;
-        top:5%;
-        }
-        .tiktok {
-        position: absolute;
-        top: 5%
-        }
-        
-        .photo_insta {
-        position: absolute;
-        top: 5%
-        }
-        
-        .photo_youtube {
-        position: absolute;
-        top: 5%
-        }
+  .imagelogo {
+    top: 10px;
+  }
 
 
-        iframe {
-          position: absolute;
-          width:95%;
-          left: 1%;
-          height: 70%;
-          align-items: center;
-          margin: auto;
-        
-        }
 
-        .support_vid{
-          background-color: black;
-          width: 97%;
-     
-        }
+
+  .reseaux-sociaux img {
+    width: 35px;
+    height: 35px;
+  }
+
+
+
+  .photo_facebook {
+    position: absolute;
+    top: 5%;
+  }
+
+  .tiktok {
+    position: absolute;
+    top: 5%
+  }
+
+  .photo_insta {
+    position: absolute;
+    top: 5%
+  }
+
+  .photo_youtube {
+    position: absolute;
+    top: 5%
+  }
+
+
+  iframe {
+    position: absolute;
+    width: 95%;
+    left: 1%;
+    height: 70%;
+    align-items: center;
+    margin: auto;
+
+  }
+
+  .support_vid {
+    background-color: black;
+    width: 97%;
+
+  }
 }
 
 @media screen and (max-width: 500px) {
   section#contact .contact for {
-      flex-direction: column;
-      width: 95%;
-  }
-  section#contact .contact for input{
-      width: 100%;
+    flex-direction: column;
+    width: 95%;
   }
 
-  section#contact .container .title h6{
-  font-size: 1em;
+  section#contact .contact for input {
+    width: 100%;
+  }
+
+  section#contact .container .title h6 {
+    font-size: 1em;
 
   }
-  section#contact .container .title h3{
-  font-size: 2em;
+
+  section#contact .container .title h3 {
+    font-size: 2em;
   }
 }
 
 
 
 
-@media screen and (max-width: 750px ) {
+@media screen and (max-width: 750px) {
 
-  .boutoncontact{
+  .boutoncontact {
 
     position: absolute;
     top: 40%;
-    left:30%;
+    left: 30%;
     width: 30%;
     align-items: center;
-    transform: (-50%,-50%);
+    transform: (-50%, -50%);
 
-}
+  }
 
-.boutoncontact a {
-	width: 100%;
-	height: 30%;
-  align-items: center;
+  .boutoncontact a {
+    width: 100%;
+    height: 30%;
+    align-items: center;
 
-}
-footer{
+  }
 
-  background-color: rgb(40, 39, 39);
-  width: 100%;
-  height: 250px;
-  position: relative;
-}
+  footer {
 
-.CGU{
+    background-color: rgb(40, 39, 39);
+    width: 100%;
+    height: 250px;
+    position: relative;
+  }
 
-  position: absolute;
-  left: 20%;
-  width: 30%;
-  transform: (-50%,-50%);
+  .CGU {
+
+    position: absolute;
+    left: 20%;
+    width: 30%;
+    transform: (-50%, -50%);
   }
 
 
-  .boutoncontacte{
+  .boutoncontacte {
 
     position: absolute;
     left: 20%;
     top: 40%;
     width: 30%;
-    transform: (-50%,-50%);
-  
-    }
+    transform: (-50%, -50%);
 
-    .M_Legal{
+  }
 
-      position: absolute;
-      left: 20%;
-      width: 30%;
-      transform: (-50%,-50%);
-      bottom: 1%;
-      }
+  .M_Legal {
+
+    position: absolute;
+    left: 20%;
+    width: 30%;
+    transform: (-50%, -50%);
+    bottom: 1%;
+  }
 
 
 }
@@ -250,33 +260,34 @@ footer{
     top: 10px;
     height: 70px;
     width: 70px;
-  
+
   }
+
   .Max {
     position: absolute;
     top: 10px;
     right: 20%;
     z-index: -10;
-    }
-  
-    .Mag { 
-      position: absolute;
-      right: 20%;
-      top: 120px;
-      z-index: -10;
-    }
+  }
+
+  .Mag {
+    position: absolute;
+    right: 20%;
+    top: 120px;
+    z-index: -10;
+  }
 
 }
 
 @media screen and (min-width:680px) and (max-width: 1230px) {
-.Max {
-  position: absolute;
-  top: 140px;
-  right: 20%;
-  z-index: -10;
+  .Max {
+    position: absolute;
+    top: 140px;
+    right: 20%;
+    z-index: -10;
   }
 
-  .Mag { 
+  .Mag {
     position: absolute;
     right: 20%;
     top: 180px;

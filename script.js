@@ -6,11 +6,11 @@ const text = document.querySelector('.slider-text');
 const text2 = document.querySelector('.slider-text2');
 
 // Define an array of slide text Titre
-const slideText = [  "Bienvenue",  "Un magicien près de vous ...",  "Des initiations..."];
+const slideText = ["Bienvenue", "Un magicien près de vous ...", "Des initiations..."];
 
 //Define an array of slide text
-const slideText2 = [  "Bonjour, je me présente. Je suis Maxime CLAUDEL, magicien à votre service",  "Un magicien pour de la magie rapprochée, pensez au close-up",  
-"Découvrez la magie et ses spécialités (cartes, sculpture de ballon, magie classique)"];
+const slideText2 = ["Bonjour, je me présente. Je suis Maxime CLAUDEL, magicien à votre service", "Un magicien pour de la magie rapprochée, pensez au close-up",
+  "Découvrez la magie et ses spécialités (cartes, sculpture de ballon, magie classique)"];
 
 let currentSlide = 0;
 
@@ -32,7 +32,7 @@ function updateSlide2() {
 
   // Update the text below the slider
   text2.innerHTML = slideText2[currentSlide];
-  
+
 }
 
 // Call the updateSlide function to display the text of the first slide

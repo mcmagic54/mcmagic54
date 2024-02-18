@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 * {
-  margin : 0;
+  margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
 }
 
-html{
+html {
   background-color: white;
 }
 
@@ -47,9 +47,11 @@ ul li {
 
 .nav-links li:hover a {
   pointer-events: visible;
-  background-color: rgba(12, 12, 12, 0.727);/*noir*/
+  background-color: rgba(12, 12, 12, 0.727);
+  /*noir*/
   color: white;
-  border-color: black;/*noir*/
+  border-color: black;
+  /*noir*/
 }
 
 /*Menu1*/
@@ -61,6 +63,7 @@ ul li {
 .nav-links li:not(:hover) .sub-menu1 {
   display: none;
 }
+
 .sub-menu1 {
   display: none;
   flex-direction: column;
@@ -87,11 +90,11 @@ ul li {
   background-color: transparent;
 }
 
-.sub-menu1 li:hover a { 
+.sub-menu1 li:hover a {
   position: relative;
   background-color: white;
-  color:black;
-  
+  color: black;
+
 }
 
 /*Menu2*/
@@ -104,6 +107,7 @@ ul li {
 .nav-links li:not(:hover) .sub-menu2 {
   display: none;
 }
+
 .sub-menu2 {
   display: none;
   flex-direction: column;
@@ -130,10 +134,10 @@ ul li {
   background-color: transparent;
 }
 
-.sub-menu2 li:hover a { 
+.sub-menu2 li:hover a {
   position: relative;
   background-color: white;
-  color:black
+  color: black
 }
 
 
@@ -147,6 +151,7 @@ ul li {
 .nav-links li:not(:hover) .sub-menu3 {
   display: none;
 }
+
 .sub-menu3 {
   display: none;
   flex-direction: column;
@@ -173,10 +178,10 @@ ul li {
   background-color: transparent;
 }
 
-.sub-menu3 li:hover a { 
+.sub-menu3 li:hover a {
   position: relative;
   background-color: white;
-  color:black
+  color: black
 }
 
 
@@ -199,8 +204,10 @@ header {
 }
 
 .navbar .nav-links ul li {
-  margin: 0 10px; /* Réduire la marge horizontale entre les éléments li */
+  margin: 0 10px;
+  /* Réduire la marge horizontale entre les éléments li */
 }
+
 .navbar a {
   color: black;
 }
@@ -213,11 +220,11 @@ header {
 
 .navbar .nav-links ul {
   display: flex;
-  
+
 }
 
 .navbar .nav-links ul li {
-  margin: 0 15px; 
+  margin: 0 15px;
 }
 
 .navbar .nav-links ul li.active a {
@@ -237,38 +244,37 @@ header {
 
 
 .imagelogo {
-	text-align: center;
-	position: absolute;
-	top: 35px;
+  text-align: center;
+  position: absolute;
+  top: 35px;
   left: 30px;
-	animation: slide-in 1s ease-out;
-  }
-  
-  @keyframes slide-in {
-	0% {
-	  transform: translate(-1000%, 00%);
-	}
-	100% {
-	  transform: translate(0, 0);
-	}
+  animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate(-1000%, 00%);
   }
 
-  .Max {
-    display: block;
-    font-family: 'Brush Script MT';
-    font-size: 50px;
-    position: absolute;
-    left: 15%;
-    top: 60px;
-    }
-    
-    .Mag {
-      display: 	block;
-    font-family: 'Brush Script MT';
-    font-size: 40px;
-    position: absolute;
-    left: 18%;
-    top: 110px;
-    }
-  
-  
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.Max {
+  display: block;
+  font-family: 'Brush Script MT';
+  font-size: 50px;
+  position: absolute;
+  left: 15%;
+  top: 60px;
+}
+
+.Mag {
+  display: block;
+  font-family: 'Brush Script MT';
+  font-size: 40px;
+  position: absolute;
+  left: 18%;
+  top: 110px;
+}
