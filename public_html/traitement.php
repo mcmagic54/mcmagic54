@@ -19,20 +19,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $contenuEmail .= "Nature: $nature\n";
   $contenuEmail .= "Date: $date\n";
   $contenuEmail .= "Message: $message\n";
-  
-  $headers = array
-  (
+  try {
+  $headers = array(
       'MIME-Version: 1.0',
       'Content-Type: text/html; charset="UTF-8";',
       'Date: ' . date('r', $_SERVER['REQUEST_TIME']),
-      'Message-ID: <' . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>',
       'From: ' . $email,
       'Reply-To: ' . $email,
       'Return-Path: ' . $email,
       'X-Mailer: PHP v' . phpversion(),
       'X-Originating-IP: ' . $_SERVER['SERVER_ADDR'],
   );
-
   // Envoi de l'e-mail
   if (mail($destinataire, $sujetEmail, $contenuEmail, $headers)) {
     // Redirection vers une page de confirmation si l'e-mail est envoyé avec succès
@@ -42,5 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Gestion des erreurs si l'e-mail n'est pas envoyé
     echo "Une erreur est survenue lors de l'envoi de l'e-mail.";
   }
+} catch (Exception $ex) {
+	echo $ex->getMessage();
 }
-?>
+}
