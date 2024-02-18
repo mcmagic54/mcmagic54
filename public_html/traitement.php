@@ -25,15 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   $headers = implode('\n', array
   (
-    'MIME-Version: 1.0',
-    'Content-Type: text/html; charset=utf-8;',
-    'Date: ' . date('r', $_SERVER['REQUEST_TIME']),
-    'Message-ID: <' . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>',
-    'From: ' . $email,
-    'Reply-To: ' . $email,
-    'Return-Path: ' . $email,
-    'X-Mailer: PHP v' . phpversion(),
-    'X-Originating-IP: ' . $_SERVER['SERVER_ADDR'],
+      'Content-Type: text/html; charset=utf-8',
+      'From: ' . $email,
+      'Reply-To: ' . $email,
   ));
 
   // Envoi de l'e-mail
