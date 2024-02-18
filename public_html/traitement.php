@@ -8,12 +8,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $sujet = htmlentities($_POST['sujet']);
   $nature = htmlentities($_POST['nature']);
   $date = htmlentities($_POST['date']);
-  $message = nl2br(htmlentities($_POST['message']));
+  $message = htmlentities($_POST['message']);
 
   // Configuration de l'e-mail
   $destinataire = 'contact@mcmagic.fr'; // Remplace avec ton adresse e-mail
   $sujetEmail = 'Nouveau message depuis le formulaire de contact du site';
-  $contenuEmail = "<h1>$sujet</h1><p>$message</p><table>";
+  $contenuEmail = "<h1>$sujet</h1><p>" . nl2br($message) . "</p><table>";
   $contenuEmail .= "<tr><th>Clé</th><th>Valeur</th></tr>";
   $contenuEmail .= "<tr><td>Nom</td><td>$nom</td></tr>";
   $contenuEmail .= "<tr><td>E-mail</td><td>$email</td></tr>";
