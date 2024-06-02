@@ -9,7 +9,7 @@ body {
 }
 
 section#contact {
-    background-image: url(/Image/test\ fond.jpg);
+    background-image: url('../Image/test\ fond.jpg');
 
     padding: 100px 15px;
     border-top: 15px solid black;
