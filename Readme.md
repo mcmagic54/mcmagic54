@@ -1,16 +1,25 @@
 # Site de MCmagic
 
+## Développement local
+Démarrer le server php avec cette commande :
+```sh
+php -S localhost:8000 -t public_html -c php.ini
+```
+
+Si php n'est pas disponible, il peut être installé avec chocolatey:
+```sh
+choco install php
+```
+
+## Déploiement en production
+Seul le contenu du dossier `public_html`doit être copié sur le serveur.
+Les autres fichiers ne doivent pas s'y trouver. 
+
 ## Todo
 
-- corriger dans navbar Professionel - > Restaurant
-- Réduire et remonter le logo
-- Remonter les éléments
-- Recenter l'ensemeble de la Page.
-
-
-
-
-# éléments réaliser
-
-* Réduire les espacements au niveau de la navbar 
-* Remonter la nav bar
+- [ ] Corriger dans navbar Professionel -> Restaurant
+- [ ] Réduire et remonter le logo
+- [ ] Remonter les éléments
+- [ ] Recenter l'ensemble de la page.
+- [X] Réduire les espacements au niveau de la navbar 
+- [X] Remonter la nav bar
