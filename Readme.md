@@ -1,6 +1,28 @@
 # Site de MCmagic
 
-## Développement local
+## Plan du site
+
+- Accueil
+- Collectivité
+    - Spectacle-show
+    - Initiations
+- Particulier
+    - Anniversaire Adultes
+    - Anniversaire Enfants
+    - Mariage
+    - Family party
+- Professionel
+    - Spectacle
+    - Close up
+    - Restaurant
+- Univers Ballons
+    - Spectacle de Ballons
+    - Stand Ballons
+    - Structure en Ballons
+- Contact
+
+## Partie technique
+### Développement local
 Démarrer le server php avec cette commande :
 ```sh
 php -S localhost:8000 -t public_html -c php.ini
@@ -11,7 +33,7 @@ Si php n'est pas disponible, il peut être installé avec chocolatey:
 choco install php
 ```
 
-## Déploiement en production
+### Déploiement en production
 Seul le contenu du dossier `public_html`doit être copié sur le serveur.
 Les autres fichiers ne doivent pas s'y trouver. 
 
