@@ -1,7 +1,15 @@
 <?php
 
-function page_header($page_title)
+function page_header($page_title, $css = array())
 {
+    $css = array_merge(
+        array(
+            "mise_en_page.css",
+            "styles.css",
+            "nav.css",
+            "responsive.css",
+        ),
+        $css);
     ?>
     <!DOCTYPE html>
     <html lang="fr">
@@ -9,10 +17,11 @@ function page_header($page_title)
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/CSS/mise_en_page.css">
-        <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
-        <link rel="stylesheet" type="text/css" href="/CSS/nav.css">
-        <link rel="stylesheet" type="text/css" href="/CSS/responsive.css">
+        <?php 
+            foreach ($css as $value) {
+                echo '<link rel="stylesheet" type="text/css" href="/css/'. $value .'">';
+            }
+        ?>
         <title>MCmagic | <?php echo $page_title; ?></title>
         <link rel="apple-touch-icon" sizes="180x180" href="/Image/Favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/Image/Favicon/favicon-32x32.png">
@@ -96,12 +105,12 @@ function page_header($page_title)
                         </ul>
                     </li>
                     <li>
-                        <a href="../HTML/Contact.html" title="Contact">Contact</a>
+                        <a href="/Pages/Contact.php" title="Contact">Contact</a>
                     </li>
                     <!--Logo Animée-->
             </div>
-            <img src="../Image/Logo.png" width="150" height="150" class="imagelogo">
-            <img src="../Image/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+            <img src="/Image/Logo.png" width="150" height="150" class="imagelogo">
+            <img src="/Image/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
             <h1 class="Max">Maxime Claudel</h1>
             <h2 class="Mag">Magicien</h2>
         </nav>
@@ -120,11 +129,11 @@ function page_footer()
                 <a href="/HTML/cgu.html">Conditions générales d'utilisations</a>
             </article>
             <article class="boutoncontacte">
-                <a href="/HTML/Contact.html">Contact</a>
+                <a href="/Pages/Contact.php">Contact</a>
             </article>
         </footer>
-        <script src="../js/script.js"></script>
-        <script src="../js/burger.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="/js/burger.js"></script>
     </body>
     </html>
     <?php
