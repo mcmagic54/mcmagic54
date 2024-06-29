@@ -75,13 +75,13 @@ function page_header($page_title)
                     <span title="Univers Ballons">Univers Ballons</span>
                     <ul>
                         <li>
-                            <a href="../HTML/spectacleballon.html" title="Spectacle">Spectacle de Ballons</a>
+                            <a href="/Pages/spectacleballon.php" title="Spectacle">Spectacle de Ballons</a>
                         </li>
                         <li>
-                            <a href="../HTML/standballon.html" title="standballon">Stand Ballons</a>
+                            <a href="/Pages/standballon.php" title="standballon">Stand Ballons</a>
                         </li>
                         <li>
-                            <a href="../HTML/structure.html" title=" structure">Structure en Ballons</a>
+                            <a href="/Pages/structure.php" title=" structure">Structure en Ballons</a>
                         </li>
                     </ul>
                 </li>
@@ -98,9 +98,9 @@ function page_footer($dark_mode = true)
 {
     ?>
         <footer <?php echo $dark_mode? 'class="dark-mode"' : "" ?>>
-            <a class="button" href="/HTML/cgu.html">Conditions générales d'utilisations</a>
-            <a class="button red-rounded" href="/Pages/Contact.php">Contact</a>
-            <a class="button" href="/HTML/MLégal.html">Mentions légales</a>
+            <a class="button" href="/Pages/cgu.php">Conditions générales d'utilisation</a>
+            <a class="button red-rounded" href="/Pages/contact.php">Contact</a>
+            <a class="button" href="/Pages/mentions-legales.php">Mentions légales</a>
         </footer>
         <script src="/scripts/burger.js"></script>
         <script src="/scripts/slider.js"></script>

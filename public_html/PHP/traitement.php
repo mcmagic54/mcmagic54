@@ -34,11 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Envoi de l'e-mail
   if (mail($destinataire, $sujetEmail, $contenuEmail, $headers)) {
     // Redirection vers une page de confirmation si l'e-mail est envoyé avec succès
-    header('Location: confirmation.html');
+    header('Location: /Pages/confirmation.php');
     exit();
   } else {
     // Gestion des erreurs si l'e-mail n'est pas envoyé
     echo "Une erreur est survenue lors de l'envoi de l'e-mail.";
   }
 }
-?>
