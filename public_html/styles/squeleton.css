@@ -101,6 +101,20 @@ article h2 {
     text-align: center;
     font-size: 25px;
 }
+/* accueil */
+.accueil {
+    background-color: rgb(118, 0, 0);
+    padding: 20px 0;
+}
+.accueil .bordure_noir {
+    background-color: black;
+    border: double 15px white;
+    padding: 10px;
+}
+.accueil-text {
+    background-color: white;
+    margin: 30px 0;
+}
 /* slider */
 
 .slider {
@@ -113,15 +127,12 @@ article h2 {
     justify-items: stretch;
     align-items: stretch;
 }
-.slider img {
+.slider .slide {
     grid-area: slide;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
-.slider img.active {
-    opacity: 1;
-}
-.slider img.active {
+.slider .slide.active {
     opacity: 1;
 }
 .slider-arrow {
@@ -219,7 +230,6 @@ form input[type="submit"]:hover {
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(40, 39, 39);
     padding: 10px 0;
 }
 .reseaux-sociaux a {
@@ -233,8 +243,10 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgb(40, 39, 39);
     min-height: 300px;
+}
+.dark-mode {
+    background-color: rgb(40, 39, 39);
 }
 .button {
     display: flex;

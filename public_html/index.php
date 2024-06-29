@@ -2,62 +2,32 @@
 include("../private_html/php/elements.php");
 page_header("Accueil");
 ?>
-    <!-- bordure noire -->
-    <div class="section1">
-        <br>
-        <article class="bordure_noir">
-            <!--Slider -->
-            <div class="slider-container">
-                <div class="slider">
-                    <img src="../Image/Slider_principal/slide1.jpg" alt="Slide 1" class="active">
-                    <img src="../Image/Slider_principal/slide2.jpg" alt="Slide 2">
-                    <img src="../Image/Slider_principal/slide3.jpg" alt="Slide 3">
-                    <div class="slider-arrow slider-arrow-left"></div>
-                    <div class="slider-arrow slider-arrow-right"></div>
-                </div>
-                <div class="slider-text"></div>
-                <div class="slider-text2"></div>
-            </div>
-        </article>
-        <br>
-    </div>
-    <br>
-
-    <!--Bouton contact-->
-    <div class="section2">
-        <br> <br><br><br> <br><br>
-        <article class="boutoncontact">
-            <a href="../HTML/Contact.html"> Contact</a>
-        </article>
-        <article class="reseaux-sociaux">
-            <article class="photo_facebook">
-                <a href="https://www.facebook.com/profile.php?id=100094623031909">
-                    <img src="../Image/logo_facebook.jpg">
-                </a>
-            </article>
-            <article class="photo_insta">
-                <a href="https://www.instagram.com/maxime_claudel_/">
-                    <img src="../Image/logo_insta.jpg">
-                </a>
-            </article>
-            <article class="photo_youtube">
-                <a href="https://www.youtube.com/channel/UCtnN6MMpCLYitfoZRJ4Qaaw">
-                    <img src="../Image/youtube.jpg">
-                </a>
-            </article>
-            <article class="tiktok">
-                <a href="https://www.tiktok.com/@mcmagic98">
-                    <img src="../Image/tiktok.jpg">
-                </a>
-            </article>
-        </article>
-    </div>
-
-    <!-- Vidéo-->
-        <div class="section3">
-            <article class="support_vid"> <br><!--
-                <iframe src="https://www.youtube.com/embed/bkrZmeuGMiM" title="Démonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>--> <br><br><br>
-            </article>
+<section class="accueil">
+    <div class="bordure_noir">
+        <div class="slider accueil-text">
+            <div class="active slide">Bienvenue sur mon site ceci est un test pour la détructions</div>
+            <div class="slide">Un magicien près de vous mais pas que iiiiiiiiiiii ...</div>
+            <div class="slide">Collectivité, professionelle, Annviersaires...</div>
         </div>
-        <br>
-<?php page_footer(); ?>
+        <div class="slider">
+            <img src="../Image/Slider_principal/slide1.jpg" alt="Slide 1" class="active slide">
+            <img src="../Image/Slider_principal/slide2.jpg" alt="Slide 2" class="slide">
+            <img src="../Image/Slider_principal/slide3.jpg" alt="Slide 3" class="slide">
+            <div class="slider-arrow slider-arrow-left">&lt;</div>
+            <div class="slider-arrow slider-arrow-right">&gt;</div>
+        </div>
+        <div class="slider accueil-text">
+            <div class="active slide">Bonjour, je me présente. Je suis Maxime CLAUDEL, magicien à votre service Bonjour, je me présente. Je suis Maxime CLAUDEL, magicien à votre service</div>
+            <div class="slide">Un magicien pour de la magie rapprochée, pensez au close-up</div>
+            <div class="slide">Découvrez la magie et ses spécialités (cartes, sculpture de ballon, magie classique)</div>
+        </div>
+    </div>
+</section>
+<?php reseaux_sociaux(false); ?>
+<section>
+    <div class="support_vid">
+        <!--
+            <iframe src="https://www.youtube.com/embed/bkrZmeuGMiM" title="Démonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+    </div>
+</section>
+<?php page_footer(false); ?>

@@ -94,10 +94,10 @@ function page_header($page_title)
     </header><?php
 }
 
-function page_footer()
+function page_footer($dark_mode = true)
 {
     ?>
-        <footer>
+        <footer <?php echo $dark_mode? 'class="dark-mode"' : "" ?>>
             <a class="button" href="/HTML/cgu.html">Conditions générales d'utilisations</a>
             <a class="button red-rounded" href="/Pages/Contact.php">Contact</a>
             <a class="button" href="/HTML/MLégal.html">Mentions légales</a>
@@ -108,10 +108,10 @@ function page_footer()
     </html>
     <?php
 }
-function reseaux_sociaux()
+function reseaux_sociaux($dark_mode = true)
 {
     ?>
-    <section class="reseaux-sociaux">
+    <section class="reseaux-sociaux<?php echo $dark_mode? " dark-mode" : "" ?>">
         <a href="https://www.facebook.com/profile.php?id=100094623031909">
             <img src="/Image/logo_facebook.png">
         </a>

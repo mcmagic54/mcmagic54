@@ -62,8 +62,8 @@ page_header("Initiations");
 
             Une fois leur ballon sculpté, il est tout à fait possible de le personnaliser selon leurs souhaits.</p>
         <div class="slider">
-            <img src="/Image/Slider_sculture_ballon/presta1.jpg" alt="Slide 1" class="active">
-            <img src="/Image/Slider_sculture_ballon/presta2.jpg" alt="Slide 2">
+            <img src="/Image/Slider_sculture_ballon/presta1.jpg" alt="Slide 1" class="active slide">
+            <img src="/Image/Slider_sculture_ballon/presta2.jpg" alt="Slide 2" class="slide">
             <div class="slider-arrow slider-arrow-left">&lt;</div>
             <div class="slider-arrow slider-arrow-right">&gt;</div>
         </div>

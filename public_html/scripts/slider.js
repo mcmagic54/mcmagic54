@@ -1,6 +1,5 @@
-const slider = document.querySelector('.slider');
-if (slider != null) {
-    const slides = slider.querySelectorAll('.slider img');
+document.querySelectorAll('.slider').forEach((slider) => {
+    const slides = slider.querySelectorAll('.slide');
     const prevArrow = slider.querySelector('.slider-arrow-left');
     const nextArrow = slider.querySelector('.slider-arrow-right');
     
@@ -31,9 +30,9 @@ if (slider != null) {
       updateSlide();
     }
     
-    nextArrow.addEventListener('click', nextSlide);
-    prevArrow.addEventListener('click', prevSlide);
+    nextArrow?.addEventListener('click', nextSlide);
+    prevArrow?.addEventListener('click', prevSlide);
     
     setInterval(nextSlide, 10000);
-}
+});
 
