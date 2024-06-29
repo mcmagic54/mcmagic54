@@ -44,16 +44,16 @@ function page_header($page_title)
                     <span title="Particulier">Particulier</span>
                     <ul>
                         <li>
-                            <a href="../HTML/Anniversaire.html" title="Anniversaire ">Anniversaire Adultes </a>
+                            <a href="/Pages/anniversaire.php" title="Anniversaire">Anniversaire Adultes </a>
                         </li>
                         <li>
-                            <a href="../HTML/Anniversaire_enfant.html" title="Anniversaire ">Anniversaire Enfants</a>
+                            <a href="/Pages/anniversaire-enfant.php" title="Anniversaire">Anniversaire Enfants</a>
                         </li>
                         <li>
-                            <a href="../HTML/Mariage.html" title="Mariage">Mariage</a>
+                            <a href="/Pages/mariage.php" title="Mariage">Mariage</a>
                         </li>
                         <li>
-                            <a href="../HTML/family.html" title="Family party">Family party</a>
+                            <a href="/Pages/family.php" title="Family party">Family party</a>
                         </li>
                     </ul>
                 </li>
@@ -61,13 +61,13 @@ function page_header($page_title)
                     <span title="Professionel">Professionel</span>
                     <ul>
                         <li>
-                            <a href="../HTML/spectacle.html" title="Spectacle">Spectacle</a>
+                            <a href="/Pages/spectacle.php" title="Spectacle">Spectacle</a>
                         </li>
                         <li>
-                            <a href="../HTML/closeup.html" title="Close_up">Close up</a>
+                            <a href="/Pages/closeup.php" title="Close_up">Close up</a>
                         </li>
                         <li>
-                            <a href="../HTML/resto.html" title="Restaurant">Restaurant</a>
+                            <a href="/Pages/resto.php" title="Restaurant">Restaurant</a>
                         </li>
                     </ul>
                 </li>
