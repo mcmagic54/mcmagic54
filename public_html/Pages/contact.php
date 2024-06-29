@@ -1,23 +1,21 @@
 <?php
 include("../../private_html/php/elements.php");
-page_header("Contact", array("formulaire.css"));
+page_header("Contact");
 ?>
 <section id="contact">
-    <div class="container">
-        <div class="title">
-            <h6>Une Question ? Un Conseil ? Un Devis ?</h6>
-            <h3> Contactez-nous !!!</h3>
-        </div>
-        <form action="../php/traitement.php" method="post">
-            <input type="text" name="name" placeholder="Entrer votre nom..." required class="nom-famille">
-            <input type="email" name="email" placeholder="Entrer votre email..." required class="email">
-            <input type="tel" name="telephone" placeholder="Numéro de téléphone..." required class="num">
-            <input type="text" name="sujet" placeholder="Entrer le sujet..." required class="subject">
-            <input type="text" name="nature" placeholder="La nature de l'évenement..." required class="nature">
-            <input name="date" type="date" required class="date">
-            <textarea class="message" name="message" placeholder="Entrer votre message"></textarea>
-            <button class="submit-btn" type="submit">Envoyer</button>
-        </form>
-    </div>
+    <form action="/php/traitement.php" method="post">
+        <h6>Une Question ? Un Conseil ? Un Devis ?</h6>
+        <h3>Contactez-nous !!!</h3>
+        <input type="text" name="name" placeholder="Entrez votre nom..." required class="nom-famille">
+        <input type="email" name="email" placeholder="Entrez votre email..." required class="email">
+        <input type="tel" name="telephone" placeholder="Numéro de téléphone..." required class="num">
+        <input type="text" name="sujet" placeholder="Entrez le sujet..." required class="subject">
+        <input type="text" name="nature" placeholder="La nature de l'évenement..." required class="nature">
+        <input name="date" type="date" required class="date">
+        <textarea name="message" rows=6 placeholder="Entrez votre message"></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
 </section>
-<?php page_footer(); ?>
+<?php reseaux_sociaux(); ?>
+<script src="/scripts/burger.js"></script>
+</body></html>
