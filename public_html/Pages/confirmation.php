@@ -10,4 +10,4 @@ page_header("Conditions générales d'utilisation");
     </article>
 </section>
 <?php reseaux_sociaux(); ?>
-<?php page_footer(); ?>
+<?php page_end(); ?>

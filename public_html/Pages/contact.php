@@ -17,5 +17,4 @@ page_header("Contact");
     </form>
 </section>
 <?php reseaux_sociaux(); ?>
-<script src="/scripts/burger.js"></script>
-</body></html>
+<?php page_end(); ?>

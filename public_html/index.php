@@ -25,9 +25,6 @@ page_header("Accueil");
 </section>
 <?php reseaux_sociaux(false); ?>
 <section>
-    <div class="support_vid">
-        <!--
-            <iframe src="https://www.youtube.com/embed/bkrZmeuGMiM" title="Démonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-    </div>
+    <iframe src="https://www.youtube.com/embed/bkrZmeuGMiM" title="Démonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 <?php page_footer(false); ?>

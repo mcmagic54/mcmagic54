@@ -127,3 +127,12 @@ function reseaux_sociaux($dark_mode = true)
     </section>
     <?php
 }
+/**
+ * A utiliser sur les pages qui n'utilisent pas page_footer
+ */
+function page_end() {
+    ?>
+    <script src="/scripts/burger.js"></script>
+    </body></html>
+    <?php
+}
