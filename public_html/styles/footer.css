@@ -7,10 +7,22 @@
     justify-content: space-evenly;
     padding: 10px 0;
 }
-.reseaux-sociaux a {
+.reseaux-sociaux a:not(.button) {
     display: block;
     width: 35px;
     height: 35px;
+}
+@media screen and (max-width:599px) {
+    .reseaux-sociaux a.button {
+        font-size: medium;
+        width: 70px;
+    }
+}
+@media screen and (min-width:600px) {
+    .reseaux-sociaux a:not(.button) {
+        width: 100px;
+        height: 100px;
+    }
 }
 /* footer */
 footer {
@@ -23,6 +35,15 @@ footer {
 .dark-mode {
     background-color: rgb(40, 39, 39);
 }
+@media screen and (min-width:600px) {
+    footer {
+        flex-direction: row;
+        min-height: unset;
+        padding: 20px;
+        justify-content: space-around;
+    }
+}
+/* button */
 .button {
     display: flex;
     position: relative;

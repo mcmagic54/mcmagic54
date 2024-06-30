@@ -11,7 +11,7 @@ page_header("Contact");
         <input type="tel" name="telephone" placeholder="Numéro de téléphone..." required class="num">
         <input type="text" name="sujet" placeholder="Entrez le sujet..." required class="subject">
         <input type="text" name="nature" placeholder="La nature de l'évenement..." required class="nature">
-        <input name="date" type="date" required class="date">
+        <input name="date" type="date" required class="date" title="Date de l'évenement">
         <textarea name="message" rows=6 placeholder="Entrez votre message"></textarea>
         <input type="submit" value="Envoyer">
     </form>

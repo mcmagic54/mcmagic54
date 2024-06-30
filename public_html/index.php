@@ -9,7 +9,7 @@ page_header("Accueil");
             <div class="slide">Un magicien près de vous mais pas que iiiiiiiiiiii ...</div>
             <div class="slide">Collectivité, professionelle, Annviersaires...</div>
         </div>
-        <div class="slider">
+        <div class="slider accueil-img">
             <img src="/Image/Slider_principal/slide1.jpg" alt="Slide 1" class="active slide">
             <img src="/Image/Slider_principal/slide2.jpg" alt="Slide 2" class="slide">
             <img src="/Image/Slider_principal/slide3.jpg" alt="Slide 3" class="slide">
@@ -24,7 +24,9 @@ page_header("Accueil");
     </div>
 </section>
 <?php reseaux_sociaux(false, true); ?>
-<section>
-    <iframe src="https://www.youtube.com/embed/bkrZmeuGMiM" title="Démonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<section class="dark">
+    <article class="center">
+        <iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
 </section>
 <?php page_end(); ?>

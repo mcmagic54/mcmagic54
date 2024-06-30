@@ -109,6 +109,9 @@ nav ul {
     nav > ul > li {
         flex-grow: 1;
     }
+    nav > ul > li > a, nav > ul > li > span {
+        text-align: center;
+    }
     nav ul ul {
         display: none;
         position: absolute;

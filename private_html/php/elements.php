@@ -140,6 +140,7 @@ function reseaux_sociaux($dark_mode = true, $show_contact = false)
 function page_end() {
     ?>
     <script src="/scripts/burger.js"></script>
+    <script src="/scripts/slider.js"></script>
     </body></html>
     <?php
 }
