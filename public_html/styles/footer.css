@@ -1,0 +1,77 @@
+
+/* Réseau sociaux */
+.reseaux-sociaux {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+.reseaux-sociaux a {
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 300px;
+}
+.dark-mode {
+    background-color: rgb(40, 39, 39);
+}
+.button {
+    display: flex;
+    position: relative;
+    width: 200px;
+    min-height: 75px;
+    border: 5px dotted white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    background: rgb(40, 39, 39);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+}
+.button::before {
+    content: '';
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 0% 0% 50% 50%;
+    z-index: -1;
+    transition: all 2s;
+}
+.button:hover::before {
+    bottom: 0px;
+    border-radius: 0px;
+}
+
+.red-rounded {
+    color: rgb(43, 69, 174);
+    border-radius: 30px;
+    background: rgb(118, 0, 0);
+}
+
+.red-rounded::before {
+    background: white;
+    border-radius: 50% 50% 0% 0%;
+    top: 75px;
+    bottom: unset;
+}
+
+.red-rounded:hover::before {
+    bottom: unset;
+    top: 0px;
+}

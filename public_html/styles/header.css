@@ -1,0 +1,142 @@
+/* logo */
+header .logo {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Brush Script MT', Georgia;
+    animation: slide-in 1s ease-out;
+}
+
+.logo img {
+    float: left;
+    max-width: 22vw;
+    max-height: 73px;
+}
+
+.logo h1 {
+    font-size: 33px;
+    margin: 0;
+    text-align: center;
+}
+
+.logo h2 {
+    font-size: 24px;
+    margin: 2px;
+    text-align: center;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(-1000%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+/* menu */
+nav li {
+    list-style:none;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:599px) {
+    nav {
+        clear: both;
+        position: absolute;
+        width: 100vw;
+        transition: transform 0.2s ease;
+        z-index: 1;
+    }
+    nav.hidden {
+        transform: translate(-100%, 0);
+    }
+
+    #menu-hamburger {
+        width: 40px;
+        position: fixed;
+        bottom: 3vw;
+        right: 3vw;
+        padding: 2px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    nav a, nav span {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 16px;
+        font-size: 16px;
+        background-color: rgba(36, 36, 36, 0.87);
+        transition: background-color 0.5s ease;
+    }
+
+    nav a:hover {
+        background-color: rgba(36, 36, 36, 0.99);
+    }
+
+    nav ul ul a {
+        text-align: center;
+    }
+
+    nav a.active {
+        color: rgb(200, 0, 0);
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width:600px) {
+    #menu-hamburger {
+        display: none;
+    }
+    header {
+        display: inline;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+    }
+    nav > ul {
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    nav > ul > li {
+        flex-grow: 1;
+    }
+    nav ul ul {
+        display: none;
+        position: absolute;
+        background-color: rgba(12, 12, 12, 0.727);
+    }
+    nav a, nav span {
+        text-decoration: none;
+        display: block;
+        padding: 16px;
+        color: black;
+        font-size: 16px;
+        transition: all 0.5s ease;
+        border-bottom: 2px solid rgb(200, 0, 0);
+    }
+    nav ul ul a {
+        border: none;
+        min-width: max-content;
+        color: white;
+        width: auto;
+    }
+    nav a:hover, nav span:hover {
+        background-color: rgba(12, 12, 12, 0.727);
+        color: white;
+    }
+    nav > ul > li {
+        position: relative;
+    }
+    nav > ul > li:hover ul {
+        display: block;
+    }
+}

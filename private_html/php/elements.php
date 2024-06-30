@@ -9,7 +9,9 @@ function page_header($page_title)
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/styles/squeleton.css">
+        <link rel="stylesheet" type="text/css" href="/styles/content.css">
+        <link rel="stylesheet" type="text/css" href="/styles/header.css">
+        <link rel="stylesheet" type="text/css" href="/styles/footer.css">
         <title>MCmagic | <?php echo $page_title; ?></title>
         <link rel="apple-touch-icon" sizes="180x180" href="/Image/Favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/Image/Favicon/favicon-32x32.png">
@@ -108,7 +110,7 @@ function page_footer($dark_mode = true)
     </html>
     <?php
 }
-function reseaux_sociaux($dark_mode = true)
+function reseaux_sociaux($dark_mode = true, $show_contact = false)
 {
     ?>
     <section class="reseaux-sociaux<?php echo $dark_mode? " dark-mode" : "" ?>">
@@ -118,6 +120,11 @@ function reseaux_sociaux($dark_mode = true)
         <a href="https://www.instagram.com/maxime_claudel_/">
             <img src="/Image/logo_insta.png">
         </a>
+        <?php
+        if ($show_contact) {
+            ?><a class="button red-rounded" href="/Pages/contact.php">Contact</a><?php
+        }
+        ?>
         <a href="https://www.youtube.com/channel/UCtnN6MMpCLYitfoZRJ4Qaaw">
             <img src="/Image/youtube.png">
         </a>

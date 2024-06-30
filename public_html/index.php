@@ -10,9 +10,9 @@ page_header("Accueil");
             <div class="slide">Collectivité, professionelle, Annviersaires...</div>
         </div>
         <div class="slider">
-            <img src="../Image/Slider_principal/slide1.jpg" alt="Slide 1" class="active slide">
-            <img src="../Image/Slider_principal/slide2.jpg" alt="Slide 2" class="slide">
-            <img src="../Image/Slider_principal/slide3.jpg" alt="Slide 3" class="slide">
+            <img src="/Image/Slider_principal/slide1.jpg" alt="Slide 1" class="active slide">
+            <img src="/Image/Slider_principal/slide2.jpg" alt="Slide 2" class="slide">
+            <img src="/Image/Slider_principal/slide3.jpg" alt="Slide 3" class="slide">
             <div class="slider-arrow slider-arrow-left">&lt;</div>
             <div class="slider-arrow slider-arrow-right">&gt;</div>
         </div>
@@ -23,8 +23,8 @@ page_header("Accueil");
         </div>
     </div>
 </section>
-<?php reseaux_sociaux(false); ?>
+<?php reseaux_sociaux(false, true); ?>
 <section>
     <iframe src="https://www.youtube.com/embed/bkrZmeuGMiM" title="Démonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
-<?php page_footer(false); ?>
+<?php page_end(); ?>
