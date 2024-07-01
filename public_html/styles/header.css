@@ -96,6 +96,14 @@ nav ul {
         text-align: center;
     }
 
+    nav ul ul {
+        display: none;
+    }
+
+    nav ul li:hover ul {
+        display: unset;
+    }
+
     nav a.active {
         color: rgb(200, 0, 0);
         font-weight: bold;
