@@ -66,12 +66,14 @@ iframe {
 
 @media screen and (min-width:600px) {
     .accueil {
+        margin-top: 20px;
         padding: 30px;
     }
     .accueil .bordure_noir {
+        padding: 50px;
         display: grid;
         grid-template-areas: ". img" ". img";
-        gap: 10px;
+        gap: 50px;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 3fr;
     }
