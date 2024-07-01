@@ -49,6 +49,9 @@ header .logo {
     }
 }
 /* menu */
+header {
+    display: inline;
+}
 nav li {
     list-style:none;
 }
@@ -59,7 +62,8 @@ nav ul {
 
 @media screen and (max-width:599px) {
     nav {
-        position: absolute;
+        position: fixed;
+        top: 0;
         width: 100vw;
         transition: transform 0.2s ease;
         z-index: 1;
@@ -113,9 +117,6 @@ nav ul {
 @media screen and (min-width:600px) {
     #menu-hamburger {
         display: none;
-    }
-    header {
-        display: inline;
     }
     nav {
         position: sticky;
