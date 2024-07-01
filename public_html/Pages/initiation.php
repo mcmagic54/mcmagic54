@@ -67,8 +67,6 @@ page_header("Initiations");
             <div class="slider-arrow slider-arrow-left">&lt;</div>
             <div class="slider-arrow slider-arrow-right">&gt;</div>
         </div>
-        <p> (Image libre de droit)</p>
-
         <p>Nous recommandons cette activité à partir de 5 ans. <br> Tout le matériel nécessaire pour réaliser les
             ateliers est fourni</p>
     </article>
