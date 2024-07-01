@@ -23,8 +23,15 @@ function page_header($page_title)
     </head>
     <body>
     <header>
+        <a href="/" class="symbole"> <!-- Petit symbole-->
+            <img class="trefle" src="/Image/trefle.jpg">
+            <img class="coeur" src="/Image/coeur.jpg">
+            <img class="pique" src="/Image/pique.jpg">
+            <img class="carreau" src="/Image/carreau.jpg">
+        </a>
+
         <a href="/" class="logo">
-            <img src="/Image/Logo.png">
+            <img src="/Image/Logo.png"> 
             <h1>Maxime Claudel</h1>
             <h2>Magicien</h2>
         </a>

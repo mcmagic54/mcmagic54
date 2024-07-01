@@ -7,7 +7,25 @@ header .logo {
     color: black;
     font-family: 'Brush Script MT', Georgia;
     animation: slide-in 1s ease-out;
+}.coeur img {
+    max-width: 22vw;
+    max-height: 73px;
 }
+.pique img {
+    max-width: 22vw;
+    max-height: 73px;
+}
+.carreau img {
+    max-width: 22vw;
+    max-height: 73px;
+}
+
+
+.trefle img {
+    max-width: 22vw;
+    max-height: 73px;
+}
+
 
 .logo img {
     max-width: 22vw;
