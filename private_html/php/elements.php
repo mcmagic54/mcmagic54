@@ -24,13 +24,13 @@ function page_header($page_title)
     <body>
     <header>
         <a href="/" class="brand">
-            <img class="suit trefle" src="/Image/trefle.jpg">
-            <img class="logo" src="/Image/Logo.png"> 
-            <img class="suit coeur" src="/Image/coeur.jpg">
+            <img alt="Trefle" class="suit trefle" src="/Image/trefle.jpg">
+            <img alt="Logo MCmagic" class="logo" src="/Image/Logo.png"> 
+            <img alt="Coeur" class="suit coeur" src="/Image/coeur.jpg">
             <h1>Maxime Claudel</h1>
-            <img class="suit pique" src="/Image/pique.jpg">
+            <img alt="Pique" class="suit pique" src="/Image/pique.jpg">
             <h2>Magicien</h2>
-            <img class="suit carreau" src="/Image/carreau.jpg">
+            <img alt="Carreau" class="suit carreau" src="/Image/carreau.jpg">
         </a>
         <nav class="hidden">
             <ul>
@@ -50,7 +50,7 @@ function page_header($page_title)
                     <span title="Particulier">Particulier</span>
                     <ul>
                         <li>
-                            <a href="/Pages/anniversaire.php" title="Anniversaire">Anniversaire Adultes </a>
+                            <a href="/Pages/anniversaire.php" title="Anniversaire">Anniversaire Adultes</a>
                         </li>
                         <li>
                             <a href="/Pages/anniversaire-enfant.php" title="Anniversaire">Anniversaire Enfants</a>
