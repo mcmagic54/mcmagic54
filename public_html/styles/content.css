@@ -63,6 +63,9 @@ iframe {
     text-align: center;
     padding: 0 10px;
 }
+.accueil .accueil-text:first-child {
+    font-family: Elephant, Impact;
+}
 
 @media screen and (min-width:600px) {
     .accueil {
@@ -237,4 +240,9 @@ form input[type="submit"]:hover {
     src:
         url(/fonts/Poppins/Poppins-Regular.ttf) format('truetype'),
         url(/fonts/Poppins.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Elephant';
+    src:
+        url(/fonts/Elephant/Elephant.ttf) format('truetype');
 }
