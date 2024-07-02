@@ -23,17 +23,14 @@ function page_header($page_title)
     </head>
     <body>
     <header>
-        <a href="/" class="symbole"> <!-- Petit symbole-
-            <img class="trefle" src="/Image/trefle.jpg">
-            <img class="coeur" src="/Image/coeur.jpg">
-            <img class="pique" src="/Image/pique.jpg">
-            <img class="carreau" src="/Image/carreau.jpg"> -->
-        </a>
-
-        <a href="/" class="logo">
-            <img src="/Image/Logo.png"> 
+        <a href="/" class="brand">
+            <img class="suit trefle" src="/Image/trefle.jpg">
+            <img class="logo" src="/Image/Logo.png"> 
+            <img class="suit coeur" src="/Image/coeur.jpg">
             <h1>Maxime Claudel</h1>
+            <img class="suit pique" src="/Image/pique.jpg">
             <h2>Magicien</h2>
+            <img class="suit carreau" src="/Image/carreau.jpg">
         </a>
         <nav class="hidden">
             <ul>

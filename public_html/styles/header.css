@@ -1,5 +1,5 @@
-/* logo */
-header .logo {
+/* brand */
+header .brand {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,55 +7,56 @@ header .logo {
     color: black;
     font-family: 'Brush Script MT', Georgia;
     animation: slide-in 1s ease-out;
-}.coeur img {
+}
+.brand img.suit {
+    display: none;
+}
+.brand img.coeur {
+    grid-area: coeur;
+}
+.brand img.pique {
+    grid-area: pique;
+}
+.brand img.carreau {
+    grid-area: carreau;
+}
+.brand img.trefle {
+    grid-area: trefle;
+}
+.brand img.logo {
     max-width: 22vw;
     max-height: 73px;
-}
-.pique img {
-    max-width: 22vw;
-    max-height: 73px;
-}
-.carreau img {
-    max-width: 22vw;
-    max-height: 73px;
+    grid-area: logo;
 }
 
-
-.trefle img {
-    max-width: 22vw;
-    max-height: 73px;
-}
-
-
-.logo img {
-    max-width: 22vw;
-    max-height: 73px;
-}
-
-.logo h1 {
+.brand h1 {
     font-size: 33px;
     margin: 0;
     text-align: center;
 }
 
-.logo h2 {
+.brand h2 {
     font-size: 24px;
     margin: 2px;
     text-align: center;
 }
 
 @media screen and (min-width:600px) {
-    header .logo {
+    header .brand {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: ". img .";
+        grid-template-columns: 1fr 3fr 1fr 2fr 1fr 3fr 1fr;
+        grid-template-areas: "trefle . coeur logo pique . carreau";
         justify-items: center;
     }
-    .logo img {
-        grid-area: img;
-        width: 80px;
-        height: 80px;
-        margin-top: 10px;
+    .brand img.logo {
+        width: 90px;
+        max-width: unset;
+        max-height: unset;
+        margin: 10px 0;
+    }
+    .brand img.suit {
+        height: 50px;
+        display: unset;
     }
 }
 @keyframes slide-in {
@@ -170,6 +171,7 @@ nav ul {
         border-bottom: 2px solid rgb(200, 0, 0);
     }
     nav ul ul a {
+        text-align: center;
         border: none;
         min-width: max-content;
         color: white;

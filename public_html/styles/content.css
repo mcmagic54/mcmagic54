@@ -67,7 +67,7 @@ iframe {
 @media screen and (min-width:600px) {
     .accueil {
         margin-top: 20px;
-        padding: 30px;
+        padding: 60px;
     }
     .accueil .bordure_noir {
         padding: 50px;
