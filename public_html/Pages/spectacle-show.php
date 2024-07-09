@@ -12,7 +12,7 @@ page_header("Spectacles / Show");
             A vous d’aider au mieux Henry.
         </p>
         <br> 
-        <img src="/Image/image temporaire.jpg"> <br>
+        <img src="/Image/image temporaire.jpg"> <br> <!-- Pourquoi pas mettre un slider-->
         <p>
             Durée de la représentation : 1h30 <br>
             Adaptation de l’âges possible (sur demande) <br>
