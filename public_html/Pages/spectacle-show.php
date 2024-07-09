@@ -11,6 +11,8 @@ page_header("Spectacles / Show");
             pour qu’il puissent vivre une aventure inoubliable. <br>
             A vous d’aider au mieux Henry.
         </p>
+        <br> 
+        <img src="/Image/image temporaire.jpg"> <br>
         <p>
             Durée de la représentation : 1h30 <br>
             Adaptation de l’âges possible (sur demande) <br>
@@ -18,7 +20,7 @@ page_header("Spectacles / Show");
         </p>
     </article>
     <article>
-        <h2> Spectacle personalisable</h2> <br>
+        <h2> Spectacle personalisable</h2>
         <p>
             Un spectacle adapté à tous les publics. Mes spectacles de magie sont conçus pour plaire à un public varié,
             des enfants aux adultes. J'ai une grande expérience dans l'animation de spectacles de magie pour les
