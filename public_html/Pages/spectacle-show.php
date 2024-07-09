@@ -18,7 +18,7 @@ page_header("Spectacles / Show");
             Adaptation de l’âges possible (sur demande) <br>
             Capacité de 200 personnes.
         </p>
-    </article>
+    </article> <!-- (j'ai un doute de laisse ceci)
     <article>
         <h2> Spectacle personalisable</h2>
         <p>
@@ -39,6 +39,6 @@ page_header("Spectacles / Show");
         </p>
         <p>Vous recherchez un magicien qui propose un spectacle sous un theme particulier. Vous recherchez un magiciens
             pour une durée particulière n’hésitez pas !!!</p>
-    </article>
+    </article>-->
 </section>
 <?php page_footer(); ?>
