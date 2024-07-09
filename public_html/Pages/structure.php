@@ -4,37 +4,36 @@ page_header("Structure en Ballons");
 ?>
 <section>
     <article>
-        <h2>Spectacle destinée pour les enfants</h2>
-        <p>Les aventures d’Henry.
-            Henry un jeune de 18 ans recherche l’aventure, il tombe nez à nez face à un magicien s’appelant Merlin et
-            l’envoya dans un livre
-            pour qu’il puissent vivre une aventure inoubliable. <br>
-            A vous d’aider au mieux Henry.</p>
-        <p>
-            Durée de la représentation : 1h30 <br>
-            Adaptation de l’âges possible (sur demande) <br>
-            Capacité de 200 personnes.
-        </p>
+        <h2>Location de Structures en Ballons – Transformez vos Événements !</h2>
+        <p>Faites de vos événements des moments inoubliables avec nos structures en ballons spectaculaires ! Que ce soit pour des fêtes d'anniversaire, des mariages, ou des événements corporatifs, nous avons des solutions sur mesure pour vous. <br> </p>
     </article>
     <article>
-        <h2>Spectacle personalisable</h2>
-        <p>
-            Un spectacle adapté à tous les publics. Mes spectacles de magie sont conçus pour plaire à un public varié,
-            des enfants aux adultes. J'ai une grande expérience dans l'animation de spectacles de magie pour les
-            collectivités, les écoles, les festivals et autres événements publics. Mes spectacles sont interactifs,
-            dynamiques et divertissants.<br>
-            Des effets magiques époustouflants. Mon spectacle de magie comprend des effets magiques incroyables et
-            impressionnants, tels que des disparitions, des apparitions, des transformations et des lévitations. Je suis
-            également capable de personnaliser mes tours pour inclure des éléments spécifiques liés à votre événement ou
-            votre thème. <br>
-            Une prestation professionnelle de qualité. Je suis un magicien professionnel avec une grande expérience dans
-            le domaine des spectacles de magie pour les collectivités. Je possède un équipement de qualité
-            professionnelle et je suis capable de m'adapter à tous les types d'événements et de scènes. <br>
-            Une interaction avec le public. Mes spectacles de magie sont conçus pour être interactifs et pour encourager
-            la participation du public. Je suis capable de faire participer les enfants et les adultes, ce qui rend mes
-            spectacles de magie encore plus divertissants et mémorables. </p>
-        <p>Vous recherchez un magiciens qui propose un spectacle sous un theme particulier. Vous recherchez un magiciens
-            pour une durées particulière n’hésitez pas !!!</p>
+        <h2>Les différentes arches</h2> <br>
+        <h3>Arches Standard : </h3> 
+
+        <img src="/Image/image temporaire.jpg"> <br>
+
+        <p> L'arches de ballons idéale pour des entrées majestueuses. L'arche s'adapte parfaitement à tous les endroits. Nous disposons d'une pallettes de couleurs complétes pour s'ajuster au mieux à vos exigences et à vos événements. Le temps d'instalations étant 1h30-2h. </p> <br>
+        <h3> Arches Prenuim : </h3>
+        <img src="/Image/arches-prenuim.jpg"> <br>
+
+        <p> L'arches de ballons idéale pour décorée un intérieurs ou pour une prise de photos pour un mariage. Nous disposons d'une pallettes de couleurs complétes pour s'ajuster au mieux à vos exigences et à vos événements. Le temps d'instalations étant 2h30-3h. </p> <br>
+
+        <h3> Nous réalisons des prestations sur sur mesure - Contactez-nous pour un devis personnalisé - </h3>
+
+        <br><p> bouton contact</p> <br>
+
+        <h2>Les autres structures</h3>
+
+        <h3> Support de ballons</h3>
+
+        <img src="/Image/image temporaire.jpg"> <br>
+
+        <h3> Les structures en chiffres</h3>
+
+        <img src="/Image/image temporaire.jpg"> <br>
+
+
     </article>
 </section>
 <?php page_footer(); ?>
