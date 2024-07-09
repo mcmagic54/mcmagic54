@@ -49,10 +49,10 @@ header .brand {
         justify-items: center;
     }
     .brand img.logo {
-        width: 90px;
+        width: 150px;
         max-width: unset;
         max-height: unset;
-        margin: 10px 0;
+        margin: 0;
     }
     .brand img.suit {
         height: 50px;

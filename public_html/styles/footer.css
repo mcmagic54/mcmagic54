@@ -33,7 +33,7 @@ footer {
     min-height: 300px;
 }
 .dark-mode {
-    background-color: rgb(40, 39, 39);
+    background-color: rgb(118, 0, 0);
 }
 @media screen and (min-width:600px) {
     footer {
@@ -80,7 +80,7 @@ footer {
 }
 
 .red-rounded {
-    color: rgb(43, 69, 174);
+    color: rgb(0, 0, 0);
     border-radius: 30px;
     background: rgb(118, 0, 0);
 }
