@@ -14,7 +14,7 @@ page_header("Mariage");
             pour répondre au mieux à vos attentes. Nous pouvons adapter les différents tours de magie pour
             correspondre à vos couleurs de mariage, votre thème ou même votre histoire d'amour.
         </p>
-        <!--<img src="/Image/image temporaire.jpg">-->
+        <img src="/Image/image temporaire.jpg">
         <p>
             En choisissant mes services de magie de cocktail, vous offrirez à vos invités une expérience unique et
             inoubliable lors de votre mariage. N'hésitez pas à nous contacter pour en savoir plus sur nos
@@ -27,18 +27,19 @@ page_header("Mariage");
             quelques centimètres de vos invités. C'est une animation élégante et discrète qui n'interfère pas avec
             les autres activités de votre mariage. Nos tours de magie de close-up s'intègrent parfaitement dans
             l'ambiance de votre mariage.</p>
-        <!--<img src="/Image/image temporaire.jpg">-->
+        <img src="/Image/image temporaire.jpg">
         <p>Une expérience magique pour tous les invités. Le close-up est une animation qui convient à tous les âges.
             Nos tours de magie sont adaptés aux enfants comme aux adultes. C'est une expérience magique qui créée
             une ambiance conviviale et divertissante pour l'ensemble de vos convives.</p>
     </article>
     <article>
         <h2>Animation Magie</h2>
+        <img src="/Image/image temporaire.jpg">
         <p>Un spectacle élégant et divertissant. La magie de salon est une prestation de magie qui se déroule sur
             une petite scène devant un public assis. C'est une animation élégante et divertissante qui créée une
             ambiance unique et inoubliable pour votre mariage. Mon spectacle de magie de salon est conçu pour plaire
             à tous les âges et pour divertir vos invités pendant une durée d'environ 45 minutes..</p>
-        <!--<img src="/Image/image temporaire.jpg">-->
+        
     </article>
     <!--<article>
             <h2>Sculture de Ballons pour Marriage</h2>
