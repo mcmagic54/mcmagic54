@@ -49,13 +49,13 @@ header .brand {
         justify-items: center;
     }
     .brand img.logo {
-        width: 150px;
+        width: 125px;
         max-width: unset;
         max-height: unset;
         margin: 0;
     }
     .brand img.suit {
-        height: 50px;
+        height: 75px;
         display: unset;
     }
 }
