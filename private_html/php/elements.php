@@ -104,7 +104,6 @@ function page_footer($dark_mode = true)
 {
     ?>
         <footer <?php echo $dark_mode? 'class="dark-mode"' : "" ?>>
-            <a class="button" href="/Pages/cgu.php">Conditions générales d'utilisation</a>
             <a class="button red-rounded" href="/Pages/contact.php">Contact</a>
             <a class="button" href="/Pages/mentions-legales.php">Mentions légales</a>
         </footer>
