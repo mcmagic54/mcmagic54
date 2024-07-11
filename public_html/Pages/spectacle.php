@@ -4,31 +4,32 @@ page_header("Spectacle");
 ?>
 <section>
     <article>
-        <h2>Spectacle destinée pour les enfants</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laboriosam qui hic sequi facere nemo iste
-            officiis corporis. Porro temporibus sunt asperiores possimus quas cumque praesentium adipisci! Deserunt,
-            ipsam numquam? <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum veniam fugit repellat tempora
-            cupiditate rerum dolorem voluptatibus! Minus asperiores quo possimus temporibus velit nihil enim quae ullam
-            suscipit unde.</p>
+        <h2>Spectacle destinée pour les enfants</h2> <br>
+        <article>
+        <h2>LES AVENTURES DE MAXOU</h2>
+        <p>Maxou, un jeune magicien, recherche son fidèle compagnon qui a disparu. Voyagez à travers divers lieux pour retrouver son fidèle « Pampan ». Un spectacle interactif idéal pour les enfants de tous âges. Inclus dans le spectacle, un retour sur la légende de Saint Nicolas dans une version inédite. </p>
+
+</p>
+        <br> 
+        <div class="slider">
+            <img src="/Image/slider_spectacle_les_aventures_de_maxou/solo.jpg" alt="Slide 1" class="active slide">
+            <img src="/Image/slider_spectacle_les_aventures_de_maxou/un.jpg" alt="Slide 2" class="slide">
+            <img src="/Image/slider_spectacle_les_aventures_de_maxou/deux.jpg" alt="Slide 3" class="slide">
+            <img src="/Image/slider_spectacle_les_aventures_de_maxou/trois.jpg" alt="Slide 4" class="slide">
+            <div class="slider-arrow slider-arrow-left">&lt;</div>
+            <div class="slider-arrow slider-arrow-right">&gt;</div>
+        </div> <br>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum maxime suscipit enim eveniet in
-            quia fugiat nihil omnis temporibus ipsa, non quam, voluptatem est provident distinctio delectus pariatur
-            magni. <br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores veniam, porro ipsum nemo doloremque natus
-            soluta magnam quae inventore quisquam! Assumenda, libero et! Ipsum et culpa commodi excepturi vel expedita?
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ullam fuga voluptate rem, accusantium cumque
-            suscipit pariatur odio. Sunt voluptatibus dolore ipsam animi quidem impedit ex, illo dignissimos delectus
-            iste.
+        Nous recommandons ce spectacle pour une salle pouvant accueillir de 50 à 200 personnes, pour une durée d’environ 1h30. <br> La prestation de régie n’est pas incluse mais est disponible en option. <br> Pour toute information technique, veuillez nous contacter. </p> <br>
+        <!-- Pourquoi pas mettre un bouton contact -->
+        <p>
+        <br>Afin de nous adapter au mieux à vos exigences et à vos budgets, nous vous proposons plusieurs options : <br> - L’arrivée du Père Noël <br> - L’arrivée de Saint Nicolas <br>- La prestation de régie
+    
         </p>
+    </article>
     </article>
     <article>
         <h2>Spectacle personalisable</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque ipsam necessitatibus, aliquid optio
-            aliquam, quaerat cumque obcaecati quis voluptatum dolorum iste! Quam, a illum? Illo doloremque aut ut
-            optio?. </p>
         <p>Vous recherchez un magiciens qui propose un spectacle sous un theme particulier. Vous recherchez un magiciens
             pour une durées particulière n’hésitez pas !!!</p>
     </article>

@@ -72,17 +72,17 @@ function page_header($page_title)
                         <li>
                             <a href="/Pages/closeup.php" title="Close_up">Close up</a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="/Pages/resto.php" title="Restaurant">Restaurant</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </li>
                 <li>
                     <span title="Univers Ballons">Univers Ballons</span>
-                    <ul>
+                    <ul><!--
                         <li>
                             <a href="/Pages/spectacleballon.php" title="Spectacle">Spectacle de Ballons</a>
-                        </li>
+                        </li>-->
                         <li>
                             <a href="/Pages/standballon.php" title="standballon">Stand Ballons</a>
                         </li>
