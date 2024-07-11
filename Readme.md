@@ -39,9 +39,14 @@ Les autres fichiers ne doivent pas s'y trouver.
 
 ## Todo
 
-- [ ] Corriger dans navbar Professionel -> Restaurant
-- [ ] Réduire et remonter le logo
-- [ ] Remonter les éléments
-- [ ] Recenter l'ensemble de la page.
-- [X] Réduire les espacements au niveau de la navbar 
-- [X] Remonter la nav bar
+- [ ] Corriger la page d'acceuil
+- [ ] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
+- [ ] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
+- [ ] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
+ ![capture](/public_html/Image/test.jpg)
+ - [ ] Mettre un fond noir derrierre la video avec un fond blanc pour faire un style de cadre a la video
+ - [x] Remplir le nouveau spectacle
+ - [ ] rajouter un bouton contact dans spectacle show et dans spectacle
+ - [-] Faire la page Mentions légale 
+
+
