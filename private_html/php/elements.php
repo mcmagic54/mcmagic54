@@ -29,7 +29,7 @@ function page_header($page_title)
             <img alt="Coeur" class="suit coeur" src="/Image/coeur.jpg">
             <h1>Maxime Claudel</h1>
             <img alt="Pique" class="suit pique" src="/Image/pique.jpg">
-            <h2>Magicien</h2>
+            <h2>Magicien<br>Sculpteur de Ballons</h2>
             <img alt="Carreau" class="suit carreau" src="/Image/carreau.jpg">
         </a>
         <nav class="hidden">

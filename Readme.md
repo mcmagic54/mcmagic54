@@ -39,7 +39,7 @@ Les autres fichiers ne doivent pas s'y trouver.
 
 ## Todo des correction
 
-- [ ] Rajouter Scultpeur de Ballon en desous de Magicien
+- [x] Rajouter Scultpeur de Ballon en desous de Magicien
 - [ ] Corriger la page d'acceuil
 - [ ] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
 - [ ] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
