@@ -34,7 +34,7 @@ choco install php
 ```
 
 ### Déploiement en production
-Seuls les dossiers `public_html` et `public_html` doivent être copiés sur le serveur.
+Seuls les dossiers `public_html` et `private_html` doivent être copiés sur le serveur.
 Les autres fichiers ne doivent pas s'y trouver. 
 
 ## Todo des correction
