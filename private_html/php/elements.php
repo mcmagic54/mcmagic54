@@ -92,6 +92,17 @@ function page_header($page_title)
                     </ul>
                 </li>
                 <li>
+                    <span title="Photos">Photos</span>
+                    <ul>
+                        <li>
+                            <a href="/Pages/photomagie.php" title="photos Magie">Photos Magie</a>
+                        </li>
+                        <li>
+                            <a href="/Pages/photosballons.php" title="Photos Ballons">Photos Ballons</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a href="/Pages/Contact.php" title="Contact">Contact</a>
                 </li>
             </ul>
