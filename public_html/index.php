@@ -29,4 +29,17 @@ page_header("Accueil");
         <iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </article>
 </section>
+
+<h1 class="fontslidelogo">- - - Il nous ont fait confiance - - -</h1>
+
+<section class="Nous ont fait confiance">
+    <div class="Slider-client">
+        <ul class="marquee-content">
+        <li><img src="/Image/sliderclientpart/o2.jpg" class="o2"></li>
+        <li><img src="/Image/sliderclientpart/nmeinternational.jpg" class="NMEinternational"></li>
+        <li><img src="/Image/sliderclientpart/logomarangesilv.jpg" class="Mairie_Marange-silvange"></li>
+        </ul>
+    </div>
+ </section>
+
 <?php page_end(); ?>

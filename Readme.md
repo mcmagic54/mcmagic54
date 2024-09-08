@@ -58,6 +58,8 @@ Les autres fichiers ne doivent pas s'y trouver.
  - [ ] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
  - [ ] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
   - [ ] Faire un rangement des photos par catégorie.
+  ![capture](/public_html/Image/capture.jpg)
+  - [ ] Terminer le slider de droite à gauche.
 
   ## Todo des correction responsive.
 
