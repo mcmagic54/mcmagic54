@@ -1,19 +1,26 @@
+/* Style global pour le body */
 body {
-    margin: 5px;
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    margin: 5px; /* Marge autour du contenu */
+    font-family: 'Poppins', sans-serif; /* Police par défaut du site */
+    min-height: 100vh; /* Hauteur minimale pour remplir toute la fenêtre */
 }
+
+/* Les images prennent 100% de la largeur disponible */
 img {
     max-width: 100%;
 }
 
-/* contenu */
+/* Réinitialisation des sections pour éviter les conflits visuels */
 section {
     clear: both;
 }
+
+/* Style des articles */
 article {
-    padding: 10px;
+    padding: 10px; /* Espace interne autour du contenu */
 }
+
+/* Titres d'articles */
 article h1 {
     text-align: center;
     font-size: 30px;
@@ -22,51 +29,67 @@ article h2 {
     text-align: center;
     font-size: 25px;
 }
+
+/* Style des iframes (notamment pour les vidéos) */
 iframe {
-    width: 100%;
-    max-width: 660px;
-    aspect-ratio: 560 / 315;
+    width: 100%; /* Largeur maximale */
+    max-width: 660px; /* Largeur maximale limitée */
+    aspect-ratio: 560 / 315; /* Ratio pour les vidéos YouTube */
 }
+
+/* Classe pour centrer le contenu */
 .center {
     text-align: center;
 }
+
+/* Arrière-plan noir */
 .black {
     background-color: black;
 }
+
+/* Media query pour les écrans plus larges */
 @media screen and (min-width:600px) {
     article {
-        margin: 0 5%;
+        margin: 0 5%; /* Ajout de marges latérales */
     }
     article > img {
-        max-width: 40%;
-        margin: 0 50%;
-        translate: -50%;
+        max-width: 40%; /* Limite la largeur des images */
+        margin: 0 50%; /* Centre l'image horizontalement */
+        translate: -50%; /* Ajuste le positionnement */
     }
     article > .slider {
         max-width: 40%;
         margin: auto;
     }
 }
-/* accueil */
+
+/* Section d'accueil */
 .accueil {
-    background-color: rgb(118, 0, 0);
-    padding: 20px 0;
+    background-color: rgb(118, 0, 0); /* Couleur de fond bordeaux */
+    padding: 20px 0; /* Espacement vertical */
 }
+
+/* Bordure noire autour de l'accueil */
 .accueil .bordure_noir {
     background-color: black;
-    border: double 15px white;
-    padding: 10px;
+    border: double 15px white; /* Bordure blanche double */
+    padding: 10px; /* Espacement interne */
 }
+
+/* Texte d'accueil */
 .accueil-text {
-    background-color: white;
-    margin: 30px 0;
-    text-align: center;
-    padding: 0 10px;
+    background-color: white; /* Fond blanc */
+    margin: 30px 0; /* Espacement vertical */
+    text-align: center; /* Centrage du texte */
+    padding: 0 10px; /* Espacement horizontal interne */
 }
+
+/* Première ligne du texte d'accueil avec une police différente */
 .accueil .accueil-text:first-child {
     font-family: Elephant, Impact;
 }
 
+/* Ajustements pour écrans larges */
 @media screen and (min-width:600px) {
     .accueil {
         margin-top: 20px;
@@ -76,7 +99,7 @@ iframe {
     }
     .accueil .bordure_noir {
         padding: 50px;
-        display: grid;
+        display: grid; /* Mise en grille */
         grid-template-areas: ". img" ". img";
         gap: 50px;
         grid-template-columns: 1fr 2fr;
@@ -89,8 +112,8 @@ iframe {
         margin: 0px;
     }
 }
-/* slider double */
 
+/* Style général des sliders */
 .slider {
     position: relative;
     display: grid;
@@ -100,14 +123,18 @@ iframe {
     justify-items: stretch;
     align-items: stretch;
 }
+
+/* Style des diapositives des sliders */
 .slider .slide {
     grid-area: slide;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.5s ease-in-out; /* Transition en douceur */
 }
 .slider .slide.active {
-    opacity: 1;
+    opacity: 1; /* Visible si actif */
 }
+
+/* Flèches de navigation des sliders */
 .slider-arrow {
     display: flex;
     position: absolute;
@@ -115,15 +142,13 @@ iframe {
     height: 30px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Transparence noire */
     cursor: pointer;
     justify-content: center;
-    text-align: center;
     align-items: center;
     color: white;
-    user-select: none;
-    display: flex;
-    font-size: 30px;
+    font-size: 30px; /* Taille de la flèche */
+    user-select: none; /* Désactive la sélection de texte */
 }
 .slider-arrow-left {
     left: 0;
@@ -132,96 +157,79 @@ iframe {
     right: 0;
 }
 
-/* Slider CLient nous on fait confiance*/
-
+/* Style des clients "Nous ont fait confiance" */
 .fontslidelogo {
-font-family: Brush Script MT;
-text-align: center;
-font-weight: bold;
-color: #d50000;
-
+    font-family: Brush Script MT;
+    text-align: center;
+    font-weight: bold;
+    color: #d50000; /* Rouge vif */
 }
 
+/* Importation des polices Google */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-
+/* Variables CSS pour le slider horizontal */
 :root {
-  --marquee-width: 80vw;
-  --marquee-height: 40vh;
-  /* --marquee-elements: 12; */ /* defined with JavaScript */
-  --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+    --marquee-width: 80vw;
+    --marquee-height: 40vh;
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
 
+/* Marquee - Animation défilante */
 .marquee {
-  width: var(--marquee-width);
-  height: var(--marquee-height);
-  background-color: #111;
-  color: #eee;
-  overflow: hidden;
-  position: relative;
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    background-color: #111;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
 }
 .marquee:before, .marquee:after {
-  position: absolute;
-  top: 0;
-  width: 10rem;
-  height: 100%;
-  content: "";
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
 }
 .marquee:before {
-  left: 0;
-  background: linear-gradient(to right, #111 0%, transparent 100%);
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
 }
 .marquee:after {
-  right: 0;
-  background: linear-gradient(to left, #111 0%, transparent 100%);
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
 }
 .marquee-content {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  animation: scrolling var(--marquee-animation-duration) linear infinite;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
-/* .marquee-content:hover {
-  animation-play-state: paused;
-} */
+
+/* Animation de défilement des éléments */
 @keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
 }
 .marquee-content li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  flex-shrink: 0;
-  width: var(--marquee-element-width);
-  max-height: 100%;
-  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
-  white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
 }
 
+/* Style des images dans le slider horizontal */
 .marquee-content li img {
-  width: 100%;
-  /* height: 100%; */
-  border: 2px solid #eee;
+    width: 100%;
+    border: 2px solid #eee;
 }
 
-@media (max-width: 600px) {
-  html { font-size: 12px; }
-  :root {
-    --marquee-width: 100vw;
-    --marquee-height: 16vh;
-    --marquee-elements-displayed: 3;
-  }
-  .marquee:before, .marquee:after { width: 5rem; }
-}
-
-
-
-/* Formulaire */
+/* Formulaire de contact */
 #contact {
     background-image: url(/Image/test\ fond.jpg);
     padding: 20px 15px;
@@ -232,60 +240,50 @@ color: #d50000;
 form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 30px 10px;
     border-radius: 15px;
-    box-shadow: 0px 10px 50px -10px #d6d6d6a3;
-    align-items: stretch;
+    box-shadow: 0px 10px 50px -10px #d6d6d6a3; /* Ombre autour */
 }
 form h3 {
     font-size: 2em;
     text-align: center;
-    color: rgb(118, 0, 0);
-    margin: 0;
+    color: rgb(118, 0, 0); /* Couleur principale */
 }
 form h6 {
     font-size: 1em;
     text-align: center;
     color: rgb(118, 0, 0);
-    margin: 0;
 }
 form input, form textarea {
     margin: 15px 0;
     padding: 10px;
-    box-sizing: border-box;
     border: none;
     outline: none;
-    border-bottom: 2px solid #e4e4ec;
+    border-bottom: 2px solid #e4e4ec; /* Ligne de séparation */
     transition: all 0.2s;
 }
 form textarea {
-    resize: none;
+    resize: none; /* Empêche le redimensionnement */
 }
-textarea, input {
-    font-family: 'Poppins', sans-serif;
-}
-form input:focus, form input:hover, form textarea:hover {
-    border-color: #760000;
-}
+
+/* Bouton de soumission */
 form input[type="submit"] {
     width: 192px;
     height: 50px;
     border-radius: 8px;
-    border: none;
     background-color: #b14c4c;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
-    outline: none;
-    margin: 25px auto 0 auto;
     transition: 0.2s;
 }
 form input[type="submit"]:hover {
     transform: translateY(5px);
 }
+
+/* Media query pour écrans larges */
 @media screen and (min-width:600px) {
     #contact {
         padding: 100px 15px;
@@ -293,7 +291,6 @@ form input[type="submit"]:hover {
     form {
         max-width: 700px;
         margin: auto;
-        padding: 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -301,40 +298,8 @@ form input[type="submit"]:hover {
             "h3 h3"
             ". ."
             ". ."
-            ". ."
             "text text"
             "submit submit";
         grid-column-gap: 50px;
     }
-    form input[type="submit"] {
-        grid-area: submit;
-    }
-    form h3 {
-        grid-area: h3;
-    }
-    form h6 {
-        grid-area: h6;
-    }
-    form textarea {
-        grid-area: text;
-    }
-}
-/* fonts */
-
-@font-face {
-    font-family: 'Brush Script MT';
-    src:
-        url(/fonts/BrushScriptMT/BrushScriptMT.otf) format("opentype"),
-        url(/fonts/BrushScriptMT/BrushScriptMT.ttf) format("truetype");
-}
-@font-face {
-    font-family: 'Poppins';
-    src:
-        url(/fonts/Poppins/Poppins-Regular.ttf) format('truetype'),
-        url(/fonts/Poppins.woff2) format('woff2');
-}
-@font-face {
-    font-family: 'Elephant';
-    src:
-        url(/fonts/Elephant/Elephant.ttf) format('truetype');
 }

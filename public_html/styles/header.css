@@ -1,4 +1,5 @@
-/* brand */
+/* Style principal du header */
+
 header .brand {
     display: flex;
     flex-direction: column;
@@ -8,37 +9,45 @@ header .brand {
     font-family: 'Brush Script MT', Georgia;
     animation: slide-in 1s ease-out;
 }
+
+
+/* Cache les images avec la classe "suit" par défaut */
 .brand img.suit {
-    display: none;
+    display: none; /* Empêche l'affichage initial */
 }
+
+/* Positionne les images dans des zones spécifiques de la grille */
 .brand img.coeur {
-    grid-area: coeur;
+    grid-area: coeur; /* Définit la zone de la grille pour "coeur" */
 }
 .brand img.pique {
-    grid-area: pique;
+    grid-area: pique; /* Définit la zone de la grille pour "pique" */
 }
 .brand img.carreau {
-    grid-area: carreau;
+    grid-area: carreau; /* Définit la zone de la grille pour "carreau" */
 }
 .brand img.trefle {
-    grid-area: trefle;
+    grid-area: trefle; /* Définit la zone de la grille pour "trefle" */
 }
+/* Dimensions spécifiques pour le logo principal */
 .brand img.logo {
-    max-width: 22vw;
-    max-height: 73px;
-    grid-area: logo;
+    max-width: 22vw; /* Limite la largeur à 22% de la fenêtre */
+    max-height: 73px; /* Limite la hauteur maximale à 73 pixels */
+    grid-area: logo; /* Positionne l'image du logo dans la grille */
 }
 
+/* Style du titre principal de la marque */
 .brand h1 {
-    font-size: 33px;
-    margin: 0;
-    text-align: center;
+    font-size: 33px; /* Taille de police pour le titre principal */
+    margin: 0; /* Supprime les marges par défaut */
+    text-align: center; /* Centre le texte horizontalement */
 }
 
+/* Style du sous-titre de la marque */
 .brand h2 {
-    font-size: 24px;
-    margin: 2px;
-    text-align: center;
+    font-size: 24px; /* Taille de police pour le sous-titre */
+    margin: 2px; /* Ajoute un léger espacement vertical */
+    text-align: center; /* Centre le texte horizontalement */
 }
 
 @media screen and (min-width:600px) {

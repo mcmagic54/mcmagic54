@@ -1,98 +1,112 @@
-
 /* Réseau sociaux */
 .reseaux-sociaux {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10px 0;
+    display: flex; /* Utilisation d'un conteneur flexible */
+    align-items: center; /* Centre les éléments verticalement */
+    flex-direction: row; /* Aligne les éléments en ligne */
+    justify-content: space-evenly; /* Espace uniforme entre les éléments */
+    padding: 10px 0; /* Espace vertical autour des éléments */
 }
+
 .reseaux-sociaux a:not(.button) {
-    display: block;
-    width: 35px;
-    height: 35px;
+    display: block; /* Rend les liens des réseaux sociaux en blocs pour avoir des dimensions définies */
+    width: 35px; /* Largeur des icônes */
+    height: 35px; /* Hauteur des icônes */
 }
+
+/* Média pour les petits écrans (moins de 600px) */
 @media screen and (max-width:599px) {
     .reseaux-sociaux a.button {
-        font-size: medium;
-        width: 70px;
+        font-size: medium; /* Taille de la police des boutons pour petits écrans */
+        width: 70px; /* Largeur des boutons pour petits écrans */
     }
 }
+
+/* Média pour les écrans de 600px ou plus */
 @media screen and (min-width:600px) {
     .reseaux-sociaux a:not(.button) {
-        width: 100px;
-        height: 100px;
+        width: 100px; /* Largeur des icônes plus grande pour les grands écrans */
+        height: 100px; /* Hauteur des icônes plus grande pour les grands écrans */
     }
 }
-/* footer */
+
+/* Footer */
 footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 300px;
+    display: flex; /* Utilisation d'un conteneur flexible pour le footer */
+    align-items: center; /* Aligne les éléments du footer au centre */
+    flex-direction: column; /* Empile les éléments verticalement par défaut */
+    justify-content: space-evenly; /* Espace uniforme entre les éléments */
+    min-height: 300px; /* Définit une hauteur minimale pour le footer */
 }
+
+/* Mode sombre (dark mode) */
 .dark-mode {
-    background-color: rgb(118, 0, 0);
+    background-color: rgb(118, 0, 0); /* Fond rouge pour le mode sombre */
 }
+
+/* Média pour les écrans de 600px ou plus */
 @media screen and (min-width:600px) {
     footer {
-        flex-direction: row;
-        min-height: unset;
-        padding: 20px;
-        justify-content: space-around;
+        flex-direction: row; /* Change l'alignement des éléments du footer en ligne pour les grands écrans */
+        min-height: unset; /* Enlève la hauteur minimale sur les grands écrans */
+        padding: 20px; /* Ajoute du padding autour du footer */
+        justify-content: space-around; /* Espace uniformément les éléments sur les grands écrans */
     }
 }
-/* button */
+
+/* Button */
 .button {
-    display: flex;
-    position: relative;
-    width: 200px;
-    min-height: 75px;
-    border: 5px dotted white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-family: arial, sans-serif;
-    font-weight: 700;
-    color: white;
-    background: rgb(40, 39, 39);
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    overflow: hidden;
-    z-index: 0;
+    display: flex; /* Utilisation de flexbox pour centrer le contenu */
+    position: relative; /* Position relative pour gérer les éléments absolument positionnés */
+    width: 200px; /* Largeur du bouton */
+    min-height: 75px; /* Hauteur minimale du bouton */
+    border: 5px dotted white; /* Bordure en pointillés blancs */
+    text-decoration: none; /* Retire la décoration de texte (soulignement) */
+    font-size: 1.3rem; /* Taille de la police */
+    font-family: arial, sans-serif; /* Police du bouton */
+    font-weight: 700; /* Poids de la police en gras */
+    color: white; /* Couleur du texte du bouton */
+    background: rgb(40, 39, 39); /* Fond sombre pour le bouton */
+    justify-content: center; /* Centre le texte horizontalement */
+    text-align: center; /* Centre le texte horizontalement */
+    align-items: center; /* Centre le texte verticalement */
+    overflow: hidden; /* Empêche le débordement du contenu */
+    z-index: 0; /* Assure que le bouton soit en dessous des éléments positionnés avec un index plus élevé */
 }
+
 .button::before {
-    content: '';
-    position: absolute;
-    bottom: 75px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    border-radius: 0% 0% 50% 50%;
-    z-index: -1;
-    transition: all 2s;
+    content: ''; /* Aucun contenu textuel, mais un pseudo-élément de fond */
+    position: absolute; /* Position absolue par rapport au parent (le bouton) */
+    bottom: 75px; /* Position initiale en bas du bouton */
+    left: 0; /* Aligne à gauche */
+    width: 100%; /* Largeur complète du bouton */
+    height: 100%; /* Hauteur complète du bouton */
+    background: black; /* Fond noir pour l'effet avant */
+    border-radius: 0% 0% 50% 50%; /* Arrondir le bas du pseudo-élément */
+    z-index: -1; /* Place le pseudo-élément derrière le contenu du bouton */
+    transition: all 2s; /* Animation de transition pour un effet fluide */
 }
+
 .button:hover::before {
-    bottom: 0px;
-    border-radius: 0px;
+    bottom: 0px; /* Déplace le pseudo-élément vers le bas du bouton lors du survol */
+    border-radius: 0px; /* Enlève l'arrondi du bas lors du survol */
 }
 
+/* Bouton "red-rounded" */
 .red-rounded {
-    color: rgb(0, 0, 0);
-    border-radius: 30px;
-    background: rgb(118, 0, 0);
+    color: rgb(0, 0, 0); /* Change la couleur du texte en noir */
+    border-radius: 30px; /* Bordure arrondie pour le bouton */
+    background: rgb(118, 0, 0); /* Fond rouge pour le bouton */
 }
 
+/* Effet avant du bouton "red-rounded" */
 .red-rounded::before {
-    background: white;
-    border-radius: 50% 50% 0% 0%;
-    top: 75px;
-    bottom: unset;
+    background: white; /* Fond blanc pour l'effet avant */
+    border-radius: 50% 50% 0% 0%; /* Arrondi en haut du pseudo-élément */
+    top: 75px; /* Positionné en haut du bouton, à l'extérieur */
+    bottom: unset; /* Enlève la position par défaut du bas */
 }
 
 .red-rounded:hover::before {
-    bottom: unset;
-    top: 0px;
+    bottom: unset; /* Enlève la position du bas */
+    top: 0px; /* Remet le pseudo-élément au niveau du haut du bouton lors du survol */
 }
