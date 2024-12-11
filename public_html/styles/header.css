@@ -142,7 +142,7 @@ nav ul {
     }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:600px) {/*partir de la navbar +600px */
     #menu-hamburger {
         display: none;
     }
@@ -174,7 +174,8 @@ nav ul {
     nav a, nav span {
         text-decoration: none;
         display: block;
-        padding: 16px;
+        padding-top: 10px;
+        padding-bottom: 5px;
         color: black;
         font-size: 16px;
         transition: all 0.5s ease;
@@ -198,3 +199,4 @@ nav ul {
         display: block;
     }
 }
+
