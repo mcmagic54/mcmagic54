@@ -38,7 +38,7 @@ header .brand {
 
 /* Style du titre principal de la marque */
 .brand h1 {
-    font-size: 50px; /* Taille de police pour le titre principal */
+    font-size: 40px; /* Taille de police pour le titre principal */
     margin: 0; /* Supprime les marges par défaut */
     text-align: center; /* Centre le texte horizontalement */
 }
