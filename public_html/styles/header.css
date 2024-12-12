@@ -53,18 +53,18 @@ header .brand {
 @media screen and (min-width:600px) {
     header .brand {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr 2fr 1fr 3fr 1fr;
         grid-template-areas: "trefle . coeur logo pique . carreau";
         justify-items: center;
+        padding-bottom: 10px;
     }
     .brand img.logo {
-        width: 125px;
+        width: 80px;
         max-width: unset;
         max-height: unset;
         margin: 0;
     }
     .brand img.suit {
-        height: 75px;
+        height: 50px;
         display: unset;
     }
 }
