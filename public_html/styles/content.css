@@ -101,16 +101,15 @@ iframe {
     }
     .accueil .bordure_noir {
         padding: 20px;
-        padding-left: 60px;
-        padding-right: 35px;
         display: grid; /* Mise en grille */
         grid-template-areas: ". img" ". img";
-        gap: 50px 25px;
-        grid-template-columns: 1fr 1fr;
+        gap: 50px 90px;
         grid-template-rows: 1fr 9fr;
     }
     .accueil-img {
         grid-area: img;
+        max-width: 80%;
+        padding-right: 30px;
     }
     .accueil-text {
         margin: 0px;
