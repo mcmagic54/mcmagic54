@@ -6,7 +6,7 @@ header .brand {
     align-items: center;
     text-decoration: none;
     color: black;
-    font-family: 'Brush Script MT', Georgia;
+    font-family: Edwardian Script ITC;
     animation: slide-in 1s ease-out;
 }
 
@@ -38,14 +38,14 @@ header .brand {
 
 /* Style du titre principal de la marque */
 .brand h1 {
-    font-size: 33px; /* Taille de police pour le titre principal */
+    font-size: 50px; /* Taille de police pour le titre principal */
     margin: 0; /* Supprime les marges par défaut */
     text-align: center; /* Centre le texte horizontalement */
 }
 
 /* Style du sous-titre de la marque */
 .brand h2 {
-    font-size: 24px; /* Taille de police pour le sous-titre */
+    font-size: 35px; /* Taille de police pour le sous-titre */
     margin: 2px; /* Ajoute un léger espacement vertical */
     text-align: center; /* Centre le texte horizontalement */
 }
@@ -138,7 +138,6 @@ nav ul {
 
     nav a.active {
         color: #c80000;
-        font-weight: bold;
     }
 }
 
