@@ -162,75 +162,77 @@ iframe {
 
 /* Style des clients "Nous ont fait confiance" */
 .fontslidelogo {
-    font-family: Brush Script MT;
+    font-family: Edwardian Script ITC;
     text-align: center;
     font-weight: bold;
     color: #d50000; /* Rouge vif */
+    border: #d50000;
 }
 
-/* Importation des polices Google */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-/* Variables CSS pour le slider horizontal */
-:root {
-    --marquee-width: 80vw;
-    --marquee-height: 40vh;
-    --marquee-elements-displayed: 5;
-    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+/* Conteneur du carrousel */
+.Slider-client {
+    overflow: hidden; /* Masque les éléments qui dépassent du conteneur */
+    width: 100%; /* Largeur maximale du carrousel */
+    height: 120px; /* Ajuste la hauteur selon la taille des logos */
+    position: relative; /* Nécessaire pour positionner les éléments */
+    background: transparent;
 }
 
-/* Marquee - Animation défilante */
-.marquee {
-    width: var(--marquee-width);
-    height: var(--marquee-height);
-    background-color: #111;
-    color: #eee;
-    overflow: hidden;
-    position: relative;
-}
-.marquee:before, .marquee:after {
-    position: absolute;
-    top: 0;
-    width: 10rem;
-    height: 100%;
-    content: "";
-    z-index: 1;
-}
-.marquee:before {
-    left: 0;
-    background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-.marquee:after {
-    right: 0;
-    background: linear-gradient(to left, #111 0%, transparent 100%);
-}
+/* Contenu du carrousel */
 .marquee-content {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    animation: scrolling var(--marquee-animation-duration) linear infinite;
+    display: flex; /* Aligne les logos horizontalement */
+    position: absolute; /* Position absolue pour contrôler le mouvement */
+    width: 100%; /* Largeur du conteneur */
+    height: 100%; /* Hauteur du conteneur */
+    animation: fade-slide 20s linear infinite; /* Animation continue et lente */
 }
 
-/* Animation de défilement des éléments */
-@keyframes scrolling {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
-}
-.marquee-content li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: var(--marquee-element-width);
-    max-height: 100%;
+/* Logos dans le carrousel */
+.marquee-content img {
+    height: 100px; /* Taille des logos */
+    margin: 0 40px; /* Espacement entre les logos */
+    opacity: 1; /* Par défaut, les logos sont visibles */
+    transition: opacity 1s ease-out; /* Transition pour l'opacité */
 }
 
-/* Style des images dans le slider horizontal */
-.marquee-content li img {
-    width: 100%;
-    border: 2px solid #eee;
+/* Animation pour faire défiler les logos */
+@keyframes fade-slide {
+    0% {
+        transform: translateX(100%); /* Départ hors de l'écran à droite */
+    }
+    20% {
+        opacity: 1; /* Visible */
+        transform: translateX(0); /* Arrivée au centre */
+    }
+    80% {
+        opacity: 1; /* Toujours visible */
+        transform: translateX(0); /* Reste au centre */
+    }
+    100% {
+        opacity: 0; /* Disparition progressive */
+        transform: translateX(-100%); /* Sortie à gauche */
+    }
 }
+
+/* Pour la duplication des images */
+.marquee-content.duplicate {
+    transform: translateX(100%); /* Décale le duplicat à droite */
+    animation: fade-slide 20s linear infinite; /* Même animation pour les images dupliquées */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Formulaire de contact */
 #contact {

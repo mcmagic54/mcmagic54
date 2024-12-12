@@ -2,7 +2,7 @@
 // Inclusion des éléments récurrents comme l'en-tête via un fichier PHP
 include("../private_html/php/elements.php");
 // Fonction personnalisée pour générer l'en-tête de la page avec le titre "Accueil"
-page_header("Accueil");
+page_header("Accueil | Maxime CLAUDEL");
 ?>
 
 <!-- Section principale de la page d'accueil -->
@@ -54,17 +54,43 @@ page_header("Accueil");
 
 <!-- Titre de la section des clients ayant fait confiance au magicien -->
 <h1 class="fontslidelogo">- - - Ils nous ont fait confiance - - -</h1>
-
+<div class="border">
 <!-- Section listant les logos des clients dans un slider horizontal -->
 <section class="Nous ont fait confiance">
-    <div class="Slider-client">
-        <!-- Liste des logos avec une animation en défilement horizontal (marquee) -->
-        <ul class="marquee-content">
-            <li><img src="/Image/sliderclientpart/o2.jpg" alt="Logo O2" class="o2"></li>
-            <li><img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo NME International" class="NMEinternational"></li>
-            <li><img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo Mairie Marange-Silvange" class="Mairie_Marange-silvange"></li>
-        </ul>
-    </div>
+    
+        <div class="Slider-client">
+            <div class="marquee-content">
+                <!-- Logos de la première boucle -->
+                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 1">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
+                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
+                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
+                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
+            </div>
+            <div class="marquee-content duplicate">
+                    <!-- Logos de la première boucle -->
+                    <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 1">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
+                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
+                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
+                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
+                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
+                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
+            </div>
+        </div>
+        </div class="border">
 </section>
 
 <!-- Inclusion du pied de page via une fonction PHP personnalisée -->
