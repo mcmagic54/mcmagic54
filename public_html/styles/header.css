@@ -55,7 +55,7 @@ header .brand {
         display: grid;
         grid-template-areas: "trefle . coeur logo pique . carreau";
         justify-items: center;
-        padding-bottom: 10px;
+        padding-bottom:10px ;
     }
     .brand img.logo {
         width: 80px;
