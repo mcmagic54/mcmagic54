@@ -1,39 +1,79 @@
 <?php
 include ("../../private_html/php/elements.php");
 page_header("Structure en Ballons");
+header("Content-Type: application/json"); // Réponse en JSON
+header("Access-Control-Allow-Origin: *"); // Autorise toutes les origines (CORS)
+
+$apiKey = "***REMOVED***"; // Remplacez par votre clé API Google
+$placeId = "***REMOVED***"; // Remplacez par l'ID du lieu
+
+// Construire l'URL pour appeler l'API Google Places
+$url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=$placeId&fields=name,rating,reviews&key=$apiKey";
+
+// Effectuer une requête cURL pour interroger l'API Google
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+$response = curl_exec($ch);
+curl_close($ch);
+
+// Vérifiez si une erreur s'est produite
+if ($response === false) {
+    echo json_encode(["error" => "Impossible de récupérer les données."]);
+    exit;
+}
+
+// Renvoyer la réponse JSON à l'utilisateur
+echo $response;
 ?>
-<section>
-    <article>
-        <h2>Location de Structures en Ballons – Transformez vos Événements !</h2>
-        <p>Faites de vos événements des moments inoubliables avec nos structures en ballons spectaculaires ! Que ce soit pour des fêtes d'anniversaire, des mariages, ou des événements corporatifs, nous avons des solutions sur mesure pour vous. <br> </p>
-    </article>
-    <article>
-        <h2>Les différentes arches</h2> <br>
-        <h3>Arches Standard : </h3> 
+<div id="reviews-container"></div>
 
-        <img src="/Image/image temporaire.jpg"> <br>
+<script>
+    async function fetchGoogleReviews() {
+        const url = "get-reviews.php"; // Chemin vers le fichier PHP
 
-        <p> L'arches de ballons idéale pour des entrées majestueuses. L'arche s'adapte parfaitement à tous les endroits. Nous disposons d'une pallettes de couleurs complétes pour s'ajuster au mieux à vos exigences et à vos événements. Le temps d'instalations étant 1h30-2h. </p> <br>
-        <h3> Arches Prenuim : </h3>
-        <img src="/Image/arches-prenuim.jpg"> <br>
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
 
-        <p> L'arches de ballons idéale pour décorée un intérieurs ou pour une prise de photos pour un mariage. Nous disposons d'une pallettes de couleurs complétes pour s'ajuster au mieux à vos exigences et à vos événements. Le temps d'instalations étant 2h30-3h. </p> <br>
+            if (data.reviews) {
+                displayReviews(data.reviews);
+            } else {
+                console.error("Aucun avis trouvé :", data);
+            }
+        } catch (error) {
+            console.error("Erreur lors de la récupération des avis :", error);
+        }
+    }
 
-        <h3> Nous réalisons des prestations sur sur mesure - Contactez-nous pour un devis personnalisé - </h3>
+    function displayReviews(reviews) {
+        const container = document.getElementById("reviews-container");
+        container.innerHTML = ""; // Vide le conteneur avant d'ajouter de nouveaux avis
 
-        <br><p> bouton contact</p> <br>
+        reviews.forEach((review) => {
+            const reviewDiv = document.createElement("div");
+            reviewDiv.className = "review";
 
-        <h2>Les autres structures</h3>
+            const reviewerName = document.createElement("h3");
+            reviewerName.textContent = review.author_name;
 
-        <h3> Support de ballons</h3>
+            const stars = document.createElement("div");
+            stars.className = "stars";
+            stars.textContent = "★".repeat(Math.round(review.rating)) + "☆".repeat(5 - Math.round(review.rating));
 
-        <img src="/Image/image temporaire.jpg"> <br>
+            const reviewText = document.createElement("p");
+            reviewText.textContent = review.text;
 
-        <h3> Les structures en chiffres</h3>
+            reviewDiv.appendChild(reviewerName);
+            reviewDiv.appendChild(stars);
+            reviewDiv.appendChild(reviewText);
 
-        <img src="/Image/image temporaire.jpg"> <br>
+            container.appendChild(reviewDiv);
+        });
+    }
 
+    // Appeler la fonction pour récupérer et afficher les avis
+    fetchGoogleReviews();
+</script>
 
-    </article>
-</section>
 <?php page_footer(); ?>

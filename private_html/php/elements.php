@@ -100,6 +100,9 @@ function page_header($page_title)
                         <li>
                             <a href="/Pages/photosballons.php" title="Photos Ballons">Photos Ballons</a>
                         </li>
+                        <li>
+                            <a href="/Pages/testapiavisgoogle.php" title="avis">test</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -155,6 +158,7 @@ function page_end() {
     ?>
     <script src="/scripts/burger.js"></script>
     <script src="/scripts/slider.js"></script>
+    <script src="/scripts/avis.js"></script>
     </body></html>
     <?php
 }

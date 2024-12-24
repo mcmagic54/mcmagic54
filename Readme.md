@@ -46,6 +46,9 @@ Les autres fichiers ne doivent pas s'y trouver.
 - [ ] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
  ![capture](/public_html/Image/test.jpg)
  - [ ] Mettre un fond noir derrierre la video avec un fond blanc pour faire un style de cadre a la video
+ - [ ] Metttre sur le côtes de la vidéo comme titre "Les Avis google "en dessous un effet d'étoiles qui se remplise toutes seul et mettre un slider qui défile les commentaires 
+     $apiKey = "***REMOVED***"; // Remplacez par votre clé API Google
+     $placeId = "***REMOVED***"; // Remplacez par l'ID du lieu
  - [x] Remplir le nouveau spectacle
  - [ ] rajouter un bouton contact dans spectacle show et dans spectacle
  - [x] Faire la page Mentions légale 

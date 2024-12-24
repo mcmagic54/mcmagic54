@@ -1,35 +1,48 @@
-var globalSlideCounter = 0;
+const apiKey = "VOTRE_CLE_API_GOOGLE"; // Remplacez par votre clé API
+const placeId = "***REMOVED***"; // Remplacez par l'ID de votre lieu
 
-const updators = [...document.querySelectorAll('.slider')].map((slider) => {
-    const slides = slider.querySelectorAll('.slide');
-    const prevArrow = slider.querySelector('.slider-arrow-left');
-    const nextArrow = slider.querySelector('.slider-arrow-right');
+async function fetchGoogleReviews() {
+    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&key=${apiKey}`;
 
-    nextArrow?.addEventListener('click', nextSlide);
-    prevArrow?.addEventListener('click', prevSlide);
-    return () => {
-        slides.forEach((slide) => {
-            slide.classList.remove('active');
-        });
-        let currentSlide = (slides.length + (globalSlideCounter % slides.length)) % slides.length;
-        slides[currentSlide].classList.add('active');
-    };
-});
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
 
-function updateSliders() {
-    updators.forEach(updator => updator());
+        if (data.status === "OK") {
+            displayReviews(data.result.reviews);
+        } else {
+            console.error("Erreur lors de la récupération des avis :", data.status);
+        }
+    } catch (error) {
+        console.error("Erreur réseau :", error);
+    }
 }
 
-function nextSlide() {
-    globalSlideCounter++;
-    updateSliders();
+function displayReviews(reviews) {
+    const container = document.getElementById("reviews-container");
+    container.innerHTML = ""; // Vide le conteneur avant d'ajouter de nouveaux avis
+
+    reviews.forEach((review) => {
+        const reviewDiv = document.createElement("div");
+        reviewDiv.className = "review";
+
+        const reviewerName = document.createElement("h3");
+        reviewerName.textContent = review.author_name;
+
+        const stars = document.createElement("div");
+        stars.className = "stars";
+        stars.textContent = "★".repeat(Math.round(review.rating)) + "☆".repeat(5 - Math.round(review.rating));
+
+        const reviewText = document.createElement("p");
+        reviewText.textContent = review.text;
+
+        reviewDiv.appendChild(reviewerName);
+        reviewDiv.appendChild(stars);
+        reviewDiv.appendChild(reviewText);
+
+        container.appendChild(reviewDiv);
+    });
 }
 
-function prevSlide() {
-    globalSlideCounter--;
-    updateSliders();
-}
-if(updators.length > 0) {
-    setInterval(nextSlide, 10000);
-}
-
+// Appeler la fonction pour récupérer et afficher les avis
+fetchGoogleReviews();
