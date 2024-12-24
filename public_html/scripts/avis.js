@@ -1,17 +1,12 @@
-const apiKey = "VOTRE_CLE_API_GOOGLE"; // Remplacez par votre clé API
-const placeId = "***REMOVED***"; // Remplacez par l'ID de votre lieu
-
 async function fetchGoogleReviews() {
-    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,reviews&key=${apiKey}`;
+    const url = `/api/get-reviews.php`;
 
     try {
         const response = await fetch(url);
-        const data = await response.json();
-
         if (data.status === "OK") {
             displayReviews(data.result.reviews);
         } else {
-            console.error("Erreur lors de la récupération des avis :", data.status);
+            console.error("Erreur lors de la récupération des avis :", data.error);
         }
     } catch (error) {
         console.error("Erreur réseau :", error);
@@ -43,6 +38,3 @@ function displayReviews(reviews) {
         container.appendChild(reviewDiv);
     });
 }
-
-// Appeler la fonction pour récupérer et afficher les avis
-fetchGoogleReviews();

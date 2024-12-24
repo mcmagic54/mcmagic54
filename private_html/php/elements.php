@@ -123,6 +123,7 @@ function page_footer($dark_mode = true)
         </footer>
         <script src="/scripts/burger.js"></script>
         <script src="/scripts/slider.js"></script>
+        <script src="/scripts/avis.js"></script>
     </body>
     </html>
     <?php
