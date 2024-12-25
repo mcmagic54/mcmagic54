@@ -3,7 +3,7 @@ include ("../../private_html/php/elements.php");
 page_header("Structure en Ballons");
 header("Content-Type: application/json"); // Réponse en JSON
 header("Access-Control-Allow-Origin: *"); // Autorise toutes les origines (CORS)
-$env = parse_ini_file('.env');
+$env = parse_ini_file('../../.env');
 
 $apiKey = $env["apiKey"];
 $placeId = $env["placeId"];
