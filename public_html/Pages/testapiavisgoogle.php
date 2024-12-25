@@ -1,37 +1,12 @@
 <?php
 include ("../../private_html/php/elements.php");
 page_header("Structure en Ballons");
-header("Content-Type: application/json"); // Réponse en JSON
-header("Access-Control-Allow-Origin: *"); // Autorise toutes les origines (CORS)
-$env = parse_ini_file('../../.env');
-
-$apiKey = $env["apiKey"];
-$placeId = $env["placeId"];
-
-// Construire l'URL pour appeler l'API Google Places
-$url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=$placeId&fields=name,rating,reviews&key=$apiKey";
-
-// Effectuer une requête cURL pour interroger l'API Google
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$response = curl_exec($ch);
-curl_close($ch);
-
-// Vérifiez si une erreur s'est produite
-if ($response === false) {
-    echo json_encode(["error" => "Impossible de récupérer les données."]);
-    exit;
-}
-
-// Renvoyer la réponse JSON à l'utilisateur
-echo $response;
 ?>
 <div id="reviews-container"></div>
 
 <script>
     async function fetchGoogleReviews() {
-        const url = "get-reviews.php"; // Chemin vers le fichier PHP
+        const url = "/api/get-reviews.php"; // Chemin vers le fichier PHP
 
         try {
             const response = await fetch(url);

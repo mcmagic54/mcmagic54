@@ -29,7 +29,11 @@ apiKey=clé_api_google
 placeId=id_du_lieu
 ```
 ### Développement local
-Démarrer le server php avec cette commande :
+Avant de lancer le serveur php, il faut vérifier les chemins du fichier `php.ini`. Par défaut, ils commencent par `C:\tools\php83`, mais selon la version de php ou du système d'exploitation, il convient de les mettre à jour.
+
+Le fichier `cacert.pem` indiqué dans `php.ini` peut-être téléchargé à cette adresse: https://curl.se/docs/caextract.html.
+
+Démarrer le serveur php avec cette commande :
 ```sh
 php -S localhost:8000 -t public_html -c php.ini
 ```
