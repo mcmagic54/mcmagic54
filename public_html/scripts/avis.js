@@ -3,6 +3,7 @@ async function fetchGoogleReviews() {
 
     try {
         const response = await fetch(url);
+        const data = await response.json();
         if (data.status === "OK") {
             displayReviews(data.result.reviews);
         } else {
