@@ -47,23 +47,23 @@ page_header("Accueil | Maxime CLAUDEL");
 
     
     <section class="dark">
-
-
-        <article class="left"> <!-- démonstration vidéo intégrée -->
             <!-- Intégration d'une vidéo YouTube via iframe -->
             <iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </article>
-
-        <article class="right">
-            <div class="avis ">
-                <div>
-                 <img src="/Image/avistest.png">
-                </div>
-            </div>
-
-
-        </article>
     </section>
+
+    <section class="avis ">
+    
+        <?php
+            include ("../../private_html/php/elements.php");
+        ?>
+            <div id="reviews-container"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+            fetchGoogleReviews();
+            });
+        </script>
+
+</section>
 
 
 
