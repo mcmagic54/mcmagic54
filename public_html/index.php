@@ -62,31 +62,31 @@ page_header("Accueil | Maxime CLAUDEL");
         <div class="marquee-content">
             <!-- Logos de la première boucle -->
             <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
-            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
-            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
-            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
         </div>
         <div class="marquee-content duplicate">
-            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 1">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
-            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
-            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
-            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
-            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
-            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="N M E International">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Ville de Marange-Silvange">
         </div>
     </div>
 </section>

@@ -40,8 +40,8 @@ function fetch_review() {
 header("Content-Type: application/json");
 $reviews = load_cached_call();
 
-// Regarde si le cache doit être rechargé
-if ($reviews == false || time() - strtotime($reviews["last_fetch"]) > 86400) {
+// Regarde si le cache doit être rechargé (604800 est le nombre de seconde dans une semaine)
+if ($reviews == false || time() - strtotime($reviews["last_fetch"]) > 604800) {
     $reviews = fetch_review();
 }
 // Vérifiez si une erreur s'est produite
