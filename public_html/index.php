@@ -12,9 +12,9 @@ page_header("Accueil | Maxime CLAUDEL");
         <!-- Slider principal pour le texte d'accueil -->
         <div class="slider accueil-text">
             <!-- Première diapositive du slider -->
-            <div class="active slide">Bienvenue sur mon site ceci est un test pour la détructions</div>
+            <div class="active slide">Bienvenue sur mon site</div>
             <!-- Deuxième diapositive du slider -->
-            <div class="slide">Un magicien près de vous mais pas que iiiiiiiiiiii ...</div>
+            <div class="slide">Un magicien près de vous mais pas que...</div>
             <!-- Troisième diapositive du slider -->
             <div class="slide">Collectivité, professionnelle, Anniversaires...</div>
         </div>
@@ -34,9 +34,10 @@ page_header("Accueil | Maxime CLAUDEL");
 
         <!-- Slider secondaire pour plus de texte descriptif -->
         <div class="slider accueil-text">
-            <div class="active slide">Bonjour, je me présente. Je suis Maxime CLAUDEL, magicien à votre service</div>
+            <div class="active slide">Je suis Maxime CLAUDEL, magicien à votre service</div>
             <div class="slide">Un magicien pour de la magie rapprochée, pensez au close-up</div>
-            <div class="slide">Découvrez la magie et ses spécialités (cartes, sculpture de ballon, magie classique)</div>
+            <div class="slide">Découvrez la magie et ses spécialités (cartes, sculpture de ballon, magie classique)
+            </div>
         </div>
     </div>
 </section>
@@ -44,77 +45,52 @@ page_header("Accueil | Maxime CLAUDEL");
 <!-- Inclusion des icônes ou liens vers les réseaux sociaux -->
 <?php reseaux_sociaux(false, true); ?>
 
-
-    
-    <section class="dark">
-            <!-- Intégration d'une vidéo YouTube via iframe -->
-            <iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
-
-    <section class="avis ">
-    
-        <?php
-            include ("../../private_html/php/elements.php");
-        ?>
-            <div id="reviews-container"></div>
-        <script>
-            document.addEventListener("DOMContentLoaded", (event) => {
-            fetchGoogleReviews();
-            });
-        </script>
-
+<section class="dark">
+    <!-- Intégration d'une vidéo YouTube via iframe -->
+    <iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Titre de la section des clients ayant fait confiance au magicien -->
-<h1 class="fontslidelogo">- - - Ils nous ont fait confiance - - -</h1>
-<div class="border">
+<section class="avis" id="reviews-container">
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => fetchGoogleReviews());
+    </script>
+</section>
 <!-- Section listant les logos des clients dans un slider horizontal -->
-<section class="Nous ont fait confiance">
-    
-        <div class="Slider-client">
-            <div class="marquee-content">
-                <!-- Logos de la première boucle -->
-                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 1">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
-                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
-                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
-                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
-            </div>
-            <div class="marquee-content duplicate">
-                    <!-- Logos de la première boucle -->
-                    <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 1">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
-                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
-                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
-                <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
-                <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
-                <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
-            </div>
+<section>
+    <!-- Titre de la section des clients ayant fait confiance au magicien -->
+    <h1 class="fontslidelogo">Ils nous ont fait confiance</h1>
+    <div class="Slider-client">
+        <div class="marquee-content">
+            <!-- Logos de la première boucle -->
+            <img src="/Image/sliderclientpart/o2.jpg" alt="O2">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
         </div>
-        </div class="border">
+        <div class="marquee-content duplicate">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 1">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 2">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 3">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 4">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 5">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 6">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 7">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 8">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 9">
+            <img src="/Image/sliderclientpart/o2.jpg" alt="Logo 10">
+            <img src="/Image/sliderclientpart/nmeinternational.jpg" alt="Logo 11">
+            <img src="/Image/sliderclientpart/logomarangesilv.jpg" alt="Logo 12">
+        </div>
+    </div>
 </section>
-
-<!-- Inclusion du pied de page via une fonction PHP personnalisée -->
-<?php page_end(); ?>
+<?php
+// Inclusion du pied de page via une fonction PHP personnalisée
+page_end();
+?>

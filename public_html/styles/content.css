@@ -194,8 +194,6 @@ padding-left: 10px;
         gap: 20px;
         justify-content: center;
         padding: 20px;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
     }
     
     .review {
@@ -227,14 +225,14 @@ padding-left: 10px;
 
 
 /* Style des clients "Nous ont fait confiance" */
-.fontslidelogo {
+.fontslidelogo, .fontslidelogo::after,  .fontslidelogo::before {
+    content: " - - - ";
     font-family: Edwardian Script ITC;
     text-align: center;
     font-weight: bold;
     color: #d50000; /* Rouge vif */
     border: #d50000;
 }
-
 
 /* Conteneur du carrousel */
 .Slider-client {
