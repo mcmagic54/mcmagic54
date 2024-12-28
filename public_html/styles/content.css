@@ -103,13 +103,14 @@ iframe {
         padding: 20px;
         display: grid; /* Mise en grille */
         grid-template-areas: ". img" ". img";
-        gap: 50px 90px;
+        gap: 50px 160px;
         grid-template-rows: 1fr 9fr;
     }
     .accueil-img {
         grid-area: img;
-        max-width: 80%;
-        padding-right: 30px;
+        max-width: 70%;
+       
+        
     }
     .accueil-text {
         margin: 0px;
@@ -230,6 +231,7 @@ padding-left: 10px;
     font-family: Edwardian Script ITC;
     text-align: center;
     font-weight: bold;
+    font-size: 35px;
     color: #d50000; /* Rouge vif */
     border: #d50000;
 }
