@@ -52,12 +52,24 @@ page_header("Accueil | Maxime CLAUDEL");
             document.addEventListener("DOMContentLoaded", (event) => fetchGoogleReviews());
         </script>
     </div>
+
+    <div id="reviews">
+    </div>
+    <div id="google-rating" style="text-align: center; margin-top: 20px;">
+            <script>
+                
+                // Affichage de la note globale
+                const ratingContainer = document.getElementById("google-rating");
+                ratingContainer.innerHTML = `
+                    <h2>Note Google</h2>
+                    <p><strong>${data.result.rating} / 5</strong></p>
+                `;
+            </script>        
+    </div>
+
     <div class="center">
         <a class="buttongoogle" href="https://g.page/r/CRCt9z0AZuC7EAE/review">Vous être client, donnez votre avis... </a>
     </div>       
-
-    <!--<iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    -->
     </section>
 
 <!-- Section listant les logos des clients dans un slider horizontal -->

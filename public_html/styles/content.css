@@ -226,6 +226,21 @@ iframe {
 
     }
 
+    #google-rating {
+        font-size: 1.5rem;
+        color: #ff9900; /* Couleur dorée pour la note */
+        margin-top: 20px;
+      }
+      
+      #google-rating h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+      
+      #reviews .review {
+        margin-bottom: 20px;
+      }
+      
     .buttongoogle {
         display: flex; /* Utilisation de flexbox pour centrer le contenu */
         position: relative; /* Position relative pour gérer les éléments absolument positionnés */
