@@ -45,15 +45,18 @@ page_header("Accueil | Maxime CLAUDEL");
 <!-- Inclusion des icônes ou liens vers les réseaux sociaux -->
 <?php reseaux_sociaux(false, true); ?>
 
-<section class="dark">
-    <!-- Intégration d'une vidéo YouTube via iframe -->
-    <iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</section>
-<section class="avis" id="reviews-container">
+<section class="red">
+<h1 class="googleavis">Les retours de nos clients :</h1>
+<div class="avis" id="reviews-container">
     <script>
         document.addEventListener("DOMContentLoaded", (event) => fetchGoogleReviews());
     </script>
-</section>
+</div>
+
+    <!--<iframe title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    -->
+    </section>
+
 <!-- Section listant les logos des clients dans un slider horizontal -->
 <section>
     <!-- Titre de la section des clients ayant fait confiance au magicien -->
