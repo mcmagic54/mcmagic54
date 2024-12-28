@@ -58,8 +58,8 @@ footer {
     display: flex; /* Utilisation de flexbox pour centrer le contenu */
     position: relative; /* Position relative pour gérer les éléments absolument positionnés */
     width: 200px; /* Largeur du bouton */
-    min-height: 75px; /* Hauteur minimale du bouton */
-    border: 5px dotted white; /* Bordure en pointillés blancs */
+    min-height: 65px; /* Hauteur minimale du bouton */
+    border: 5px solid rgb(118, 0, 0); /* Bordure en rouge */
     text-decoration: none; /* Retire la décoration de texte (soulignement) */
     font-size: 1.3rem; /* Taille de la police */
     font-weight: 700; /* Poids de la police en gras */
@@ -93,13 +93,13 @@ footer {
 /* Bouton "red-rounded" */
 .red-rounded {
     color: rgb(0, 0, 0); /* Change la couleur du texte en noir */
-    border-radius: 30px; /* Bordure arrondie pour le bouton */
-    background: rgb(118, 0, 0); /* Fond rouge pour le bouton */
+    border-radius: 20px; /* Bordure arrondie pour le bouton */
+    background: white ; /* Fond rouge pour le bouton */
 }
 
 /* Effet avant du bouton "red-rounded" */
 .red-rounded::before {
-    background: white; /* Fond blanc pour l'effet avant */
+    background: rgba(118, 0, 0, 0.698); /* Fond blanc pour l'effet avant */
     border-radius: 50% 50% 0% 0%; /* Arrondi en haut du pseudo-élément */
     top: 75px; /* Positionné en haut du bouton, à l'extérieur */
     bottom: unset; /* Enlève la position par défaut du bas */
