@@ -45,6 +45,13 @@ page_header("Accueil | Maxime CLAUDEL");
 <!-- Inclusion des icônes ou liens vers les réseaux sociaux -->
 <?php reseaux_sociaux(false, true); ?>
 
+<section class="sectionvid">
+    <div class=blackfond>
+        <iframe class=video title="Démonstration" src="https://www.youtube.com/embed/bkrZmeuGMiM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+ </section>
+
+
 <section class="red">
 <h1 class="googleavis">Les retours de nos clients :</h1>
     <div class="avis" id="reviews-container">
