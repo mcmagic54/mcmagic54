@@ -161,50 +161,101 @@ iframe {
     right: 0;
 }
 
-/*video fond noir*/
-
-.sectionvid{
-    text-align: center;
-    justify-content: center; /* Centre le texte horizontalement */
-    align-items: center; /* Centre le texte verticalement */
-    justify-items: center;
-
-
+/* Conteneur principal */
+.content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding-left: 150px;
+        flex-wrap: wrap;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
 }
 
+/* Vidéo avec le fond noir */
 .blackfond {
-    display: flex; /* Utilisation de flexbox pour centrer le contenu */
-    position: relative; /* Position relative pour gérer les éléments absolument positionnés */
-    width: 650px; /* Largeur du bouton */
-    height: 400px; /* Hauteur minimale du bouton */
-    border: 10px double white;
-    outline: 5px solid rgb(118, 0, 0);
-    border-radius: 30px;
-    background-color: black;
-    text-align: center;
-    justify-content: center; /* Centre le texte horizontalement */
-    align-items: center; /* Centre le texte verticalement */
-    justify-items: center;
-
-
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Vidéo prend toute la largeur disponible */
+    max-width: 600px; /* Limite la largeur maximale */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    background-color: rgb(118, 0, 0); /* Fond rouge foncé */
+    border: 10px double white; /* Bordure blanche double */
+    outline: 5px solid black; /* Contour noir */
+    border-radius: 30px; /* Coins arrondis */
+    padding: 20px;
 }
 
+/* Vidéo */
 .video {
-    display: flex; /* Utilisation de flexbox pour centrer le contenu */
-    position: relative; /* Position relative pour gérer les éléments absolument positionnés */
-    justify-content: center; /* Centre le texte horizontalement */
-    text-align: center; /* Centre le texte horizontalement */
-    align-items: center; /* Centre le texte verticalement */
-
-    width: 600px; /* Largeur du bouton */
-    height: 350px; /* Hauteur minimale du bouton */
-
+    width: 100%; /* La vidéo occupe tout l'espace disponible dans le conteneur noir */
+    max-width: 600px; /* Largeur maximale de la vidéo */
+    height: 300px; /* Hauteur de la vidéo */
+    border-radius: 10px; /* Coins arrondis pour la vidéo */
 }
 
+/* Conteneur des réseaux sociaux et du bouton contact */
+.reseaux-container {
+    display: flex;
+    flex-direction: column; /* Réseaux sociaux et bouton en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    gap: 10px; /* Réduction de l'espacement entre les icônes et le bouton */
+    max-width: 200px; /* Réduction de la largeur des réseaux sociaux */
+}
 
+/* Réseaux sociaux */
+.reseaux-sociaux {
+    display: flex;
+    flex-direction: column-reverse; /* Inverse l'ordre vertical */
+    align-items: center;
+    gap: 20px; /* Réduction de l'espacement entre les icônes */
+}
 
+.reseaux-sociaux a:not(.button) {
+    width: 50px; /* Réduction de la largeur des icônes */
+    height: 50px; /* Réduction de la hauteur des icônes */
+}
 
+/* Bouton Contact */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem; /* Taille de police réduite */
+    font-weight: bold;
+    color: white;
+    background: rgb(40, 39, 39);
+    padding: 8px 15px; /* Réduction des marges internes */
+    border: 2px solid white; /* Réduction de la bordure */
+    border-radius: 8px; /* Coins arrondis plus petits */
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
 
+/* Effet hover sur le bouton */
+.button:hover {
+    background: white;
+    color: rgb(40, 39, 39);
+}
+
+/* Média pour petits écrans */
+@media screen and (max-width: 600px) {
+    .content-wrapper {
+        flex-direction: column; /* Passe en disposition verticale */
+    }
+
+    .reseaux-container {
+        margin-top: 20px; /* Espacement entre la vidéo et les réseaux sociaux */
+    }
+
+    .video {
+        height: 200px; /* Ajuste la hauteur de la vidéo */
+    }
+}
 
 
 /*dark avis client et video venant du Serveur*/
