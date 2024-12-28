@@ -12,11 +12,11 @@ page_header("Accueil | Maxime CLAUDEL");
         <!-- Slider principal pour le texte d'accueil -->
         <div class="slider accueil-text">
             <!-- Première diapositive du slider -->
-            <div class="active slide">Bienvenue sur mon site</div>
+            <div class="active slide">Apportez une touche de magie à vos événements professionnels ! ✨</div>
             <!-- Deuxième diapositive du slider -->
-            <div class="slide">Un magicien près de vous mais pas que...</div>
+            <div class="slide">Faites de vos événements privés un moment magique ! ✨</div>
             <!-- Troisième diapositive du slider -->
-            <div class="slide">Collectivité, professionnelle, Anniversaires...</div>
+            <div class="slide">Offrez à votre communauté une expérience magique inoubliable ! ✨</div>
         </div>
 
         <!-- Slider pour les images d'accueil -->
@@ -34,9 +34,39 @@ page_header("Accueil | Maxime CLAUDEL");
 
         <!-- Slider secondaire pour plus de texte descriptif -->
         <div class="slider accueil-text">
-            <div class="active slide">Je suis Maxime CLAUDEL, magicien à votre service</div>
-            <div class="slide">Un magicien pour de la magie rapprochée, pensez au close-up</div>
-            <div class="slide">Découvrez la magie et ses spécialités (cartes, sculpture de ballon, magie classique)
+            <!--slide1-->
+            <div class="active slide"> Offrez à vos clients et collaborateurs une expérience unique avec nos animations magiques : <br>
+                <br>
+                Bars et Restaurants : Dynamisez vos soirées avec du close-up. Des tours de magie réalisés directement à la table pour captiver vos clients et créer une ambiance mémorable. <br>
+                Événements d’Entreprise : Célébrez vos séminaires, soirées d’entreprise ou lancements de produits avec un spectacle magique et interactif, idéal pour rassembler et divertir. <br>
+                Des prestations sur mesure pour marquer les esprits et sublimer vos événements professionnels. <br>
+                <br>
+                📞 Contactez-nous dès aujourd’hui pour une animation magique qui fera toute la différence !
+            </div>
+
+            <!--Slide2-->
+            <div class="slide">Rendez vos fêtes inoubliables avec nos animations magiques, adaptées à tous vos événements privés : <br>
+                <br>
+                Anniversaires Enfants et Adultes : Des tours spectaculaires et interactifs pour émerveiller vos invités. <br>
+                Mariages : Ajoutez une touche d’élégance et de surprise à votre réception avec des performances magiques inoubliables. <br>
+                Family Parties : Rassemblez petits et grands autour d’une expérience unique et conviviale. <br>
+                Nos packs personnalisés garantissent une animation sur mesure, qui saura ravir tous vos convives. <br>
+                <br>
+                📞 Contactez-nous dès aujourd’hui pour organiser une fête magique et mémorable ! <br>
+            </div>
+
+
+
+            <!--Slide3-->
+            <div class="slide"> <br>
+                Transformez vos événements locaux en moments inoubliables avec nos animations magiques. <br>
+                <br>
+                Spectacles captivants : Une performance professionnelle qui mêle illusions, humour et interaction pour émerveiller petits et grands. <br>
+                Ateliers ludiques : Initiez votre public à l’art de la magie et développez leur créativité lors d’une expérience unique et interactive. <br>
+                Parfait pour les fêtes locales, événements culturels et activités éducatives. <br><br>
+                📞 Contactez-nous dès aujourd’hui pour offrir à votre collectivité une expérience magique sur mesure !
+
+
             </div>
         </div>
     </div>
