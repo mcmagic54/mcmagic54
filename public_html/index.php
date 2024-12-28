@@ -68,7 +68,7 @@ page_header("Accueil | Maxime CLAUDEL");
     </div>
 
     <div class="center">
-        <a class="buttongoogle" href="https://g.page/r/CRCt9z0AZuC7EAE/review">Vous être client, donnez votre avis... </a>
+        <a class="buttongoogle" href="https://g.page/r/CRCt9z0AZuC7EAE/review">Vous être client, donnez votre avis ... </a>
     </div>       
     </section>
 
