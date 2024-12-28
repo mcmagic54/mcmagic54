@@ -51,18 +51,18 @@ Les autres fichiers ne doivent pas s'y trouver.
 
 - [x] Rajouter Scultpeur de Ballon en desous de Magicien
 - [ ] Corriger la page d'acceuil
-- [ ] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
+- [x] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
 - [ ] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
-- [ ] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
+- [x] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
  ![capture](/public_html/Image/test.jpg)
- - [ ] Mettre un fond noir derrierre la video avec un fond blanc pour faire un style de cadre a la video
- - [ ] Metttre sur le côtes de la vidéo comme titre "Les Avis google "en dessous un effet d'étoiles qui se remplise toutes seul et mettre un slider qui défile les commentaires 
+ - [x] Mettre un fond noir derrierre la video avec un fond blanc pour faire un style de cadre a la video
+ - [ ] Metttre sur le côtes de la vidéo le bouton contact avec les reseaux sociaux
  - [x] Remplir le nouveau spectacle
  - [ ] rajouter un bouton contact dans spectacle show et dans spectacle
  - [x] Faire la page Mentions légale 
  - [ ] Stylisée Mentions Légale
  - [ ] Dégrossir les slider dans spectacle / colléctivité
- - [ ] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
+ - [x] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
  - [ ] Mettre le footer partout avec et identique voir ci dessous (l'idéake et d'alligner et une margin entre les éléments)
  ![capture](/public_html/Image/footer.jpg)
  - [ ] Mettre une marge entre la page et le footer
@@ -70,7 +70,7 @@ Les autres fichiers ne doivent pas s'y trouver.
  - [ ] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
   - [ ] Faire un rangement des photos par catégorie.
   ![capture](/public_html/Image/capture.jpg)
-  - [ ] Terminer le slider de droite à gauche.
+  - [x] Terminer le slider de droite à gauche.
 
   ## Todo des correction responsive.
 
