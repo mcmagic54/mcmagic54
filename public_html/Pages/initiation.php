@@ -26,7 +26,7 @@ page_header("Initiations");
 
             À la fin de l'initiation, les enfants pourront repartir avec leur diplôme de magicien en herbe.
         </p>
-        <img src="/Image/classic.JPG">
+        <img src="/Image/Gallery/Magie/classic.JPG">
         <p> Nous recommandons cette activité à partir de 7 ans. <br>
             Tout le matériel nécessaire pour réaliser les ateliers est fourni.
         </p>
@@ -44,7 +44,7 @@ page_header("Initiations");
 
             À la fin de l'initiation, les enfants pourront repartir avec leur diplôme de magicien en herbe.
         </p>
-        <img src="/Image/cartes.JPG" class="image">
+        <img src="/Image//Gallery/Magie/cartes.JPG" class="image">
         <p>Nous recommandons cette activité à partir de 7 ans. <br>
             Tout le matériel nécessaire pour réaliser les ateliers est fourni.</p>
     </article>

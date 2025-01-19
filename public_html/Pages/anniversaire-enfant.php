@@ -21,7 +21,7 @@ page_header("Anniversaire Enfant");
                 Au programme : désignation de maison, création de sortilèges magiques, transformation, lévitations
                 pour nos futurs recrues de Poudlard.
             </p>
-            <img src="/Image/hp.jpg">
+            <img src="/Image/remplisages/hp.jpg">
             <p>
                 Un cadeau sera offert pour notre sorcier préféré.
             </p>
@@ -31,7 +31,7 @@ page_header("Anniversaire Enfant");
             <p>Nous recherchons le nouveau jedi de la planète Terre.
                 Pour cela nous réalisons des tests pour estimer la présence de la force au sein de nos de futurs
                 aventuriers.</p>
-            <img src="/Image/sw.jpg">
+            <img src="/Image/remplisages/sw.jpg">
             <p>
                 Un cadeau sera offert pour notre jeune jedi préféré.</p>
         </article>

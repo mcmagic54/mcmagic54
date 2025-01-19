@@ -36,13 +36,13 @@ function page_header($page_title, $base_id = null)
     ?>>
     <header>
         <a href="/" class="brand">
-            <img alt="Trefle" class="suit trefle" src="/Image/trefle.jpg">
-            <img alt="Logo MCmagic" class="logo" src="/Image/Logo.png"> 
-            <img alt="Coeur" class="suit coeur" src="/Image/coeur.jpg">
+            <img alt="Trefle" class="suit trefle" src="/Image/Logo/trefle.jpg">
+            <img alt="Logo MCmagic" class="logo" src="/Image/Logo/Logo.png"> 
+            <img alt="Coeur" class="suit coeur" src="/Image/Logo/coeur.jpg">
             <h1>Maxime Claudel</h1>
-            <img alt="Pique" class="suit pique" src="/Image/pique.jpg">
+            <img alt="Pique" class="suit pique" src="/Image/Logo/pique.jpg">
             <h2>Magicien<br>Sculpteur de Ballons</h2>
-            <img alt="Carreau" class="suit carreau" src="/Image/carreau.jpg">
+            <img alt="Carreau" class="suit carreau" src="/Image/Logo/carreau.jpg">
         </a>
         <nav class="hidden">
             <ul>
@@ -142,10 +142,10 @@ function reseaux_sociaux($dark_mode = true, $show_contact = false)
     ?>
     <section class="reseaux-sociaux<?php echo $dark_mode? " dark-mode" : "" ?>">
         <a href="https://www.facebook.com/profile.php?id=100094623031909">
-            <img src="/Image/logo_facebook.png">
+            <img src="/Image/Logo/logo_facebook.png">
         </a>
         <a href="https://www.instagram.com/maxime_claudel_/">
-            <img src="/Image/logo_insta.png">
+            <img src="/Image/Logo/logo_insta.png">
         </a>
         <?php
         if ($show_contact) {
@@ -153,10 +153,10 @@ function reseaux_sociaux($dark_mode = true, $show_contact = false)
         }
         ?>
         <a href="https://www.youtube.com/channel/UCtnN6MMpCLYitfoZRJ4Qaaw">
-            <img src="/Image/youtube.png">
+            <img src="/Image/Logo/youtube.png">
         </a>
         <a href="https://www.tiktok.com/@m.max54">
-            <img src="/Image/tiktok.png">
+            <img src="/Image/Logo/tiktok.png">
         </a>
     </section>
     <?php
