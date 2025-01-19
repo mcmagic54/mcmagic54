@@ -23,7 +23,12 @@
 
 ## Partie technique
 ### Configuration
-Pour faire fonctionner les avis google, il faut remplir le fichier `.env` de cette façon:
+Les configurations de l'application sont stockées dans le fichier `.env`.
+Il peut être créé avec la commande suivante:
+```bash
+cp .env.template .env
+```
+Pour faire fonctionner les avis google, il faut ensuite remplir le fichier `.env` de cette façon:
 ```ini
 apiKey=clé_api_google
 placeId=id_du_lieu
@@ -60,7 +65,7 @@ Les autres fichiers ne doivent pas s'y trouver.
  - [ ] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
  - [ ] Stylisée Mentions Légale
  - [ ] Mettre le footer partout avec et identique voir ci dessous (l'idéake et d'alligner et une margin entre les éléments)
- ![capture](/public_html/Image/footer.jpg)
+ ![capture](/doc/img/footer.jpg)
  - [ ] Mettre une marge entre la page et le footer
 
  - [ ] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
@@ -69,17 +74,17 @@ Les autres fichiers ne doivent pas s'y trouver.
   - [x] Terminer le slider de droite à gauche.
   - [x] Rajouter Scultpeur de Ballon en desous de Magicien
   - [x] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
-  - [x] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous ![capture](/public_html/Image/test.jpg)
+  - [x] Dégrossir au maximun la page d'accueil avec le slider qui fait la page comme voir capture ci-dessous ![capture](/doc/img/test.jpg)
   - [x] Remplir le nouveau spectacle
   - [x] Faire la page Mentions légale 
   - [x] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
   - [X] Corriger la page d'acceuil
   - [x] Metttre sur le côtes de la vidéo le bouton contact avec les reseaux sociaux
-  - [x] Dégrossir les slider dans spectacle / colléctivité
+  - [x] Dégrossir les sliders dans spectacle / collectivité
 
   ## Todo des correction responsive.
 
-![capture](/public_html/Image/resp.jpg)
+![capture](/doc/img/resp.jpg)
    - [ ] Remonter le burger
    - [ ] Centrer le menu déroulant et les éléments.
    - [ ] Mettre une ligne qui délimite le haut de page à la page en question
