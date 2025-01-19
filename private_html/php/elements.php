@@ -19,7 +19,8 @@ function page_header($page_title, $base_id = null)
         <link rel="stylesheet" type="text/css" href="/styles/at-rules.css">
         <link rel="stylesheet" type="text/css" href="/styles/header.css">
         <link rel="stylesheet" type="text/css" href="/styles/footer.css">
-        <title>MCmagic | <?php echo $page_title; ?></title>
+        <title><?php echo $page_title; ?></title>
+        <meta name="description" content="Description du site" />
         <link rel="apple-touch-icon" sizes="180x180" href="/Image/Favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/Image/Favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/Image/Favicon/favicon-16x16.png">
