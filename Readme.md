@@ -55,26 +55,29 @@ Les autres fichiers ne doivent pas s'y trouver.
 ## Todo des correction
 
  - [ ] faire apparaitre le score globle d'étoile de google.
+ - [ ] rajouter l'image donner votre avis
+
+ - [ ] Remettre la gallery image sous un format plus identiques
+
+ - [ ] Ecricre la page Politiques de Confidentialité
+
+ - [ ] Ecricre la page Stand ballons
 
  - [ ] rajouter un lien entre Politiques de confidenctialité (contact) et sous ligner Politiques de Confidentialité + couleur bleu
 
  - [ ] rajouter un bouton contact dans spectacle show et dans spectacle
 
- 
- - [ ] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
- - [ ] Stylisée Mentions Légale
- - [ ] Mettre le footer partout avec et identique voir ci dessous (l'idéake et d'alligner et une margin entre les éléments)
- ![capture](/doc/img/footer.jpg)
- - [ ] Mettre une marge entre la page et le footer
 
- - [ ] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
- - [ ] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
+
+ 
+
+ 
 
   - [x] faire alligner la fiches contact + reseau parralle à la video (plus vers la gauche)
   - [x] Terminer le slider de droite à gauche.
   - [x] Rajouter Scultpeur de Ballon en desous de Magicien
   - [x] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
-  - [x] Dégrossir au maximun la page d'accueil avec le slider qui fait la page comme voir capture ci-dessous ![capture](/doc/img/test.jpg)
+  - [x] Dégrossir au maximun la page d'accueil avec le slider qui fait la page comme voir capture ci-dessous 
   - [x] Remplir le nouveau spectacle
   - [x] Faire la page Mentions légale 
   - [x] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
@@ -88,6 +91,11 @@ Les autres fichiers ne doivent pas s'y trouver.
   - [x] Mettre une marge entre la page et le footer
   - [x] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
   - [x] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
+  - [x] Stylisée Mentions Légale
+  - [x] Mettre le footer partout avec et identique voir ci dessous (l'idéake et d'alligner et une margin entre les éléments)
+  - [x] Mettre une marge entre la page et le footer
+  - [x] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
+  - [x] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
 
 
   ## Todo des correction responsive.
