@@ -16,14 +16,14 @@ page_header("Family Party");
             votre fête. Je peux intervenir pendant le cocktail, le dîner ou même après le repas pour divertir vos
             invités. Mon spectacle est flexible et peut être ajusté en fonction de vos besoins et de l'emploi du
             temps de votre fête..</p>
-        <img src="/Image/ballons.jpg">
+        <img src="/Image//Gallery/Ballons/ballons.jpg">
     </article>
     <article>
         <h2>Un évement sur mesure</h2>
         <p>Une animation sur mesure pour chaque événement. Je m'adapte à chaque occasion pour offrir une animation
             unique qui convient parfaitement à votre événement. Mon expérience en tant que magicien professionnel me
             permet de proposer des spectacles qui s'adaptent à tous les publics et à toutes les ambiances..</p>
-        <img src="/Image/mesure.jpg">
+        <img src="/Image/Gallery/remplisages/mesure.jpg">
     </article>
 </section>
 <?php page_footer(); ?>

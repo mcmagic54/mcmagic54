@@ -15,7 +15,7 @@ page_header("Structure en Ballons");
 
         <p> L'arches de ballons idéale pour des entrées majestueuses. L'arche s'adapte parfaitement à tous les endroits. Nous disposons d'une pallettes de couleurs complétes pour s'ajuster au mieux à vos exigences et à vos événements. Le temps d'instalations étant 1h30-2h. </p> <br>
         <h3> Arches Prenuim : </h3>
-        <img src="/Image/arches-prenuim.jpg"> <br>
+        <img src="/Image//Gallery/Ballons/arches-prenuim.jpg"> <br>
 
         <p> L'arches de ballons idéale pour décorée un intérieurs ou pour une prise de photos pour un mariage. Nous disposons d'une pallettes de couleurs complétes pour s'ajuster au mieux à vos exigences et à vos événements. Le temps d'instalations étant 2h30-3h. </p> <br>
 
