@@ -112,9 +112,6 @@ function page_header($page_title, $base_id = null)
                         <li>
                             <a href="/Pages/photosballons.php" title="Photos Ballons">Photos Ballons</a>
                         </li>
-                        <li>
-                            <a href="/Pages/testapiavisgoogle.php" title="avis">test</a>
-                        </li>
                     </ul>
                 </li>
                 <li>

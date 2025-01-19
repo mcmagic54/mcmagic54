@@ -49,23 +49,14 @@ Les autres fichiers ne doivent pas s'y trouver.
 
 ## Todo des correction
 
- - [ ] faire alligner la fiches contact + reseau parralle à la video (plus vers la gauche)
  - [ ] faire apparaitre le score globle d'étoile de google.
- - [ ] le titre du slider bien le mettre en centrer mais par contre le texte dans la rubrique le mettre en alignement a gauche
 
+ - [ ] rajouter un lien entre Politiques de confidenctialité (contact) et sous ligner Politiques de Confidentialité + couleur bleu
 
  - [ ] rajouter un bouton contact dans spectacle show et dans spectacle
 
- 
- - [ ] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
- - [ ] Stylisée Mentions Légale
- - [ ] Mettre le footer partout avec et identique voir ci dessous (l'idéake et d'alligner et une margin entre les éléments)
- ![capture](/public_html/Image/footer.jpg)
- - [ ] Mettre une marge entre la page et le footer
 
- - [ ] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
- - [ ] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
-
+  - [x] faire alligner la fiches contact + reseau parralle à la video (plus vers la gauche)
   - [x] Terminer le slider de droite à gauche.
   - [x] Rajouter Scultpeur de Ballon en desous de Magicien
   - [x] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
@@ -76,6 +67,14 @@ Les autres fichiers ne doivent pas s'y trouver.
   - [X] Corriger la page d'acceuil
   - [x] Metttre sur le côtes de la vidéo le bouton contact avec les reseaux sociaux
   - [x] Dégrossir les slider dans spectacle / colléctivité
+  - [x] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
+  - [x] Stylisée Mentions Légale
+  - [x] Mettre le footer partout avec et identique voir ci dessous (l'idéake et d'alligner et une margin entre les éléments)
+  - [x] le titre du slider bien le mettre en centrer mais par contre le texte dans la rubrique le mettre en alignement a gauche
+  - [x] Mettre une marge entre la page et le footer
+  - [x] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
+  - [x] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
+
 
   ## Todo des correction responsive.
 
