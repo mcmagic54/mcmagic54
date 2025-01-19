@@ -9,41 +9,13 @@
 .reseaux-sociaux a:not(.button) {
     width: 50px; /* Réduction de la largeur des icônes */
     height: 50px; /* Réduction de la hauteur des icônes */
+    margin: 5px;
 }
-/*
-.reseaux-sociaux {
-    display: flex
-;
-    flex-direction: column-reverse;
-    
-    padding: 10px 0;
-    width: 350px;
-    align-items: center;
+/* Pour afficher les réseaux en ligne sur la page contacts */
+#contact-page .reseaux-sociaux {
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-
-
-.reseaux-sociaux a:not(.button) {
-    display: block; /* Rend les liens des réseaux sociaux en blocs pour avoir des dimensions définies *
-    width: 35px; /* Largeur des icônes *
-    height: 35px; /* Hauteur des icônes *
-}
-
-/* Média pour les petits écrans (moins de 600px) *
-@media screen and (max-width:599px) {
-    .reseaux-sociaux a.button {
-        font-size: medium; /* Taille de la police des boutons pour petits écrans *
-        width: 70px; /* Largeur des boutons pour petits écrans *
-    }
-}
-
-/* Média pour les écrans de 600px ou plus *
-@media screen and (min-width:600px) {
-    .reseaux-sociaux a:not(.button) {
-        width: 100px; /* Largeur des icônes plus grande pour les grands écrans *
-        height: 100px; /* Hauteur des icônes plus grande pour les grands écrans *
-    }
-}*/
-
 /* Footer */
 footer {
     display: flex; /* Utilisation d'un conteneur flexible pour le footer */

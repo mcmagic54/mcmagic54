@@ -1,6 +1,12 @@
 <?php
-
-function page_header($page_title)
+/**
+ * Echo the header of the page
+ *
+ * @param  string  $page_title The title of the page
+ * @param  string  $base_id If not null, the id on the body element
+ * @return void
+ */
+function page_header($page_title, $base_id = null)
 {
     ?>
     <!DOCTYPE html>
@@ -22,7 +28,11 @@ function page_header($page_title)
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
     </head>
-    <body>
+    <body <?php
+        if ($base_id != null) {
+            echo " id=\"" . $base_id . "\"";
+        }
+    ?>>
     <header>
         <a href="/" class="brand">
             <img alt="Trefle" class="suit trefle" src="/Image/trefle.jpg">

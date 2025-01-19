@@ -433,12 +433,14 @@ form h3 {
     text-align: center;
     color: rgb(118, 0, 0); /* Couleur principale */
     grid-area: h3;
+    margin: 0;
 }
 form h6 {
     font-size: 1em;
     text-align: center;
     color: rgb(118, 0, 0);
     grid-area: h6;
+    margin: 0;
 }
 form input, form textarea {
     margin: 15px 0;

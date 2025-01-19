@@ -1,6 +1,6 @@
 <?php
 include("../../private_html/php/elements.php");
-page_header("Contact");
+page_header("Contact", "contact-page");
 ?>
 <section id="contact">
     <form action="/php/traitement.php" method="post">
@@ -13,7 +13,7 @@ page_header("Contact");
         <input type="text" name="nature" placeholder="La nature de l'évenement..." required class="nature">
         <input name="date" type="date" required class="date" title="Date de l'évenement">
         <textarea name="message" rows=6 placeholder="Entrez votre message"></textarea>
-        <div class="rgpd"><input type=checkbox required id="rgpd" /> <span for="rgpd">J'accepte les conditions d'utilisation</span></div>
+        <div class="rgpd"><input type=checkbox required id="rgpd" /> <label for="rgpd">J'accepte les conditions d'utilisation</label></div>
         <input type="submit" value="Envoyer">
     </form>
 </section>
