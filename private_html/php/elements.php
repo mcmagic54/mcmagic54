@@ -10,6 +10,7 @@ function page_header($page_title)
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/styles/content.css">
+        <link rel="stylesheet" type="text/css" href="/styles/at-rules.css">
         <link rel="stylesheet" type="text/css" href="/styles/header.css">
         <link rel="stylesheet" type="text/css" href="/styles/footer.css">
         <title>MCmagic | <?php echo $page_title; ?></title>

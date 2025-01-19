@@ -1,3 +1,4 @@
 *.pdn
 .env
 private_html/api_cached/*
+*.bak

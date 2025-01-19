@@ -103,14 +103,13 @@ iframe {
         padding: 20px;
         display: grid; /* Mise en grille */
         grid-template-areas: ". img" ". img";
-        gap: 25px 160px;
+        gap: 25px 25px;
         grid-template-rows: 1fr 9fr;
     }
     .accueil-img {
         grid-area: img;
-        max-width: 80%;
-       
-        
+        justify-self: center;
+        align-self: center;
     }
     .accueil-text {
         margin: 0px;
@@ -162,14 +161,14 @@ iframe {
 }
 
 /* Conteneur principal */
-.content-wrapper {
+.sectionvid {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-        padding-left: 150px;
+        padding-left: 10px;
         flex-wrap: wrap;
-        padding-right: 50px;
+        padding-right: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
 }
@@ -205,7 +204,6 @@ iframe {
     align-items: center; /* Centre les éléments horizontalement */
     justify-content: center; /* Centre les éléments verticalement */
     gap: 10px; /* Réduction de l'espacement entre les icônes et le bouton */
-    max-width: 200px; /* Réduction de la largeur des réseaux sociaux */
 }
 
 /* Réseaux sociaux */
@@ -221,26 +219,6 @@ iframe {
     height: 50px; /* Réduction de la hauteur des icônes */
 }
 
-/* Bouton Contact */
-.button {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1rem; /* Taille de police réduite */
-    font-weight: bold;
-    color: white;
-    background: rgb(40, 39, 39);
-    padding: 8px 15px; /* Réduction des marges internes */
-    border: 2px solid white; /* Réduction de la bordure */
-    border-radius: 8px; /* Coins arrondis plus petits */
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Effet hover sur le bouton */
-.button:hover {
-    background: white;
-    color: rgb(40, 39, 39);
-}
 
 /* Média pour petits écrans */
 @media screen and (max-width: 600px) {
