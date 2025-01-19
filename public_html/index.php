@@ -75,8 +75,6 @@ page_header("Accueil | Maxime CLAUDEL");
 <!-- Inclusion des icônes ou liens vers les réseaux sociaux -->
 
 <section class="sectionvid">
-  <!-- Conteneur principal -->
-  <div class="content-wrapper">
     <!-- Vidéo avec le fond noir -->
     <div class="blackfond">
       <iframe class="video" title="Démonstration" 
@@ -86,12 +84,7 @@ page_header("Accueil | Maxime CLAUDEL");
         allowfullscreen>
       </iframe>
     </div>
-
-    <!-- Réseaux sociaux et bouton de contact -->
-    <div class="reseaux-container">
-      <div class="reseaux-sociaux">
-        <?php reseaux_sociaux(false, true); ?>
-      </div>
+    <?php reseaux_sociaux(false, true); ?>
 </section>
 
 <section class="red">

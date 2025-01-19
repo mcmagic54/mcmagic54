@@ -79,7 +79,7 @@ Les autres fichiers ne doivent pas s'y trouver.
 
   ## Todo des correction responsive.
 
-    ![capture](/public_html/Image/resp.jpg)
+![capture](/public_html/Image/resp.jpg)
    - [ ] Remonter le burger
    - [ ] Centrer le menu déroulant et les éléments.
    - [ ] Mettre une ligne qui délimite le haut de page à la page en question

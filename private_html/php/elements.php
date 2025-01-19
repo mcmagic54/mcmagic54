@@ -1,6 +1,12 @@
 <?php
-
-function page_header($page_title)
+/**
+ * Echo the header of the page
+ *
+ * @param  string  $page_title The title of the page
+ * @param  string  $base_id If not null, the id on the body element
+ * @return void
+ */
+function page_header($page_title, $base_id = null)
 {
     ?>
     <!DOCTYPE html>
@@ -10,9 +16,11 @@ function page_header($page_title)
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/styles/content.css">
+        <link rel="stylesheet" type="text/css" href="/styles/at-rules.css">
         <link rel="stylesheet" type="text/css" href="/styles/header.css">
         <link rel="stylesheet" type="text/css" href="/styles/footer.css">
-        <title>MCmagic | <?php echo $page_title; ?></title>
+        <title><?php echo $page_title; ?></title>
+        <meta name="description" content="Description du site" />
         <link rel="apple-touch-icon" sizes="180x180" href="/Image/Favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/Image/Favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/Image/Favicon/favicon-16x16.png">
@@ -21,7 +29,11 @@ function page_header($page_title)
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
     </head>
-    <body>
+    <body <?php
+        if ($base_id != null) {
+            echo " id=\"" . $base_id . "\"";
+        }
+    ?>>
     <header>
         <a href="/" class="brand">
             <img alt="Trefle" class="suit trefle" src="/Image/trefle.jpg">
@@ -119,7 +131,7 @@ function page_footer($dark_mode = true)
     ?>
         <footer <?php echo $dark_mode? 'class="dark-mode"' : "" ?>>
             <a class="button red-rounded" href="/Pages/contact.php">Contact</a>
-            <a class="button" href="/Pages/mentions-legales.php">Mentions légales</a>
+            <a class="button red-rounded" href="/Pages/mentions-legales.php">Mentions légales</a>
         </footer>
         <script src="/scripts/burger.js"></script>
         <script src="/scripts/slider.js"></script>

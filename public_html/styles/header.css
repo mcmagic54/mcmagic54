@@ -6,7 +6,7 @@ header .brand {
     align-items: center;
     text-decoration: none;
     color: black;
-    font-family: Edwardian Script ITC;
+    font-family: "Edwardian Script ITC";
     animation: slide-in 1s ease-out;
 }
 
