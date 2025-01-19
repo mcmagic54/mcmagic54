@@ -23,7 +23,12 @@
 
 ## Partie technique
 ### Configuration
-Pour faire fonctionner les avis google, il faut remplir le fichier `.env` de cette façon:
+Les configurations de l'application sont stockées dans le fichier `.env`.
+Il peut être créé avec la commande suivante:
+```bash
+cp .env.template .env
+```
+Pour faire fonctionner les avis google, il faut ensuite remplir le fichier `.env` de cette façon:
 ```ini
 apiKey=clé_api_google
 placeId=id_du_lieu
@@ -55,12 +60,21 @@ Les autres fichiers ne doivent pas s'y trouver.
 
  - [ ] rajouter un bouton contact dans spectacle show et dans spectacle
 
+ 
+ - [ ] Changer le bouton "Mention Légale"  qui sois identique que le bouton "Contact"
+ - [ ] Stylisée Mentions Légale
+ - [ ] Mettre le footer partout avec et identique voir ci dessous (l'idéake et d'alligner et une margin entre les éléments)
+ ![capture](/doc/img/footer.jpg)
+ - [ ] Mettre une marge entre la page et le footer
+
+ - [ ] Dans le formulaire de contact remonter la barre d'écriture "Entrez votre message"
+ - [ ] Rajouter une case à cochez au dessus du bouton envoyer dans le formulaire de contact et mettre un texte à côté " J'acceptez notre politique des données personelles." (si non valider envoyer une erreur pour casse obligatoire.)
 
   - [x] faire alligner la fiches contact + reseau parralle à la video (plus vers la gauche)
   - [x] Terminer le slider de droite à gauche.
   - [x] Rajouter Scultpeur de Ballon en desous de Magicien
   - [x] Changer le bouton "Contact" j'aimerais qu'il sois blanc et quand l'animations du blac depasse d'un pixel le texte change en noir.
-  - [x] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous ![capture](/public_html/Image/test.jpg)
+  - [x] Dégrossir au maximun la page d'accueil avec le slider qui fait la page comme voir capture ci-dessous ![capture](/doc/img/test.jpg)
   - [x] Remplir le nouveau spectacle
   - [x] Faire la page Mentions légale 
   - [x] Dégrossir au Maximun la page d'acceuil avec le slide qui fais la page comme voir capture ci desous
@@ -78,7 +92,7 @@ Les autres fichiers ne doivent pas s'y trouver.
 
   ## Todo des correction responsive.
 
-![capture](/public_html/Image/resp.jpg)
+![capture](/doc/img/resp.jpg)
    - [ ] Remonter le burger
    - [ ] Centrer le menu déroulant et les éléments.
    - [ ] Mettre une ligne qui délimite le haut de page à la page en question
