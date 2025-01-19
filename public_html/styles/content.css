@@ -162,15 +162,15 @@ iframe {
 
 /* Conteneur principal */
 .sectionvid {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        padding-left: 10px;
-        flex-wrap: wrap;
-        padding-right: 10px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Vidéo avec le fond noir */
@@ -205,20 +205,6 @@ iframe {
     justify-content: center; /* Centre les éléments verticalement */
     gap: 10px; /* Réduction de l'espacement entre les icônes et le bouton */
 }
-
-/* Réseaux sociaux */
-.reseaux-sociaux {
-    display: flex;
-    flex-direction: column-reverse; /* Inverse l'ordre vertical */
-    align-items: center;
-    gap: 20px; /* Réduction de l'espacement entre les icônes */
-}
-
-.reseaux-sociaux a:not(.button) {
-    width: 50px; /* Réduction de la largeur des icônes */
-    height: 50px; /* Réduction de la hauteur des icônes */
-}
-
 
 /* Média pour petits écrans */
 @media screen and (max-width: 600px) {

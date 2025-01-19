@@ -120,7 +120,7 @@ function page_footer($dark_mode = true)
     ?>
         <footer <?php echo $dark_mode? 'class="dark-mode"' : "" ?>>
             <a class="button red-rounded" href="/Pages/contact.php">Contact</a>
-            <a class="button" href="/Pages/mentions-legales.php">Mentions légales</a>
+            <a class="button red-rounded" href="/Pages/mentions-legales.php">Mentions légales</a>
         </footer>
         <script src="/scripts/burger.js"></script>
         <script src="/scripts/slider.js"></script>
