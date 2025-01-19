@@ -1,6 +1,6 @@
 /* Style global pour le body */
 body {
-    margin: 5px; /* Marge autour du contenu */
+    margin: 0; /* Marge autour du contenu */
     font-family: 'Poppins', sans-serif; /* Police par défaut du site */
     min-height: 100vh; /* Hauteur minimale pour remplir toute la fenêtre */
 }
@@ -98,6 +98,7 @@ iframe {
     .accueil {
         margin-top: 20px;
         padding: 30px;
+        margin: 5px;
     }
     .accueil .bordure_noir {
         padding: 20px;
@@ -222,16 +223,15 @@ iframe {
 }
 
 
-/*dark avis client et video venant du Serveur*/
-
+/* Section avis client */
 .red {
-
+    margin: 0 5px;
     background-color: #7b1417;
     border-radius: 10px;
 }
 
 .googleavis {
-
+    
     padding-top: 15px;
     word-spacing: 4px;
     text-align: center;
@@ -239,104 +239,103 @@ iframe {
     text-underline-offset: 8px;
     color: white; 
     text-decoration: underline 2px;
-
 }
 
-    #reviews-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        padding: 20px;
-        padding-top: 0px;
-    }
-    
-    .review {
-        background: white;
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        width: 300px;
-    }
-    
-    .review h3 {
-        margin: 0 0 10px;
-        font-size: 18px;
-        color: #333;
-    }
-    
-    .stars {
-        color: gold;
-        margin-bottom: 10px;
-    }
-    
-    .review p {
-        font-size: 14px;
-        color: #555;
-    }
-    
-    .center{
-        display: flex;
-        justify-content: center; /* Centre le texte horizontalement */
-        text-align: center; /* Centre le texte horizontalement */
-        align-items: center; /* Centre le texte verticalement */
-        padding : 20px;
+#reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 0px;
+}
 
+.review {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
 
-    }
+.review h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
 
-    #google-rating {
-        font-size: 1.5rem;
-        color: #ff9900; /* Couleur dorée pour la note */
-        margin-top: 20px;
-      }
-      
-      #google-rating h2 {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-      }
-      
-      #reviews .review {
-        margin-bottom: 20px;
-      }
-      
-    .buttongoogle {
-        display: flex; /* Utilisation de flexbox pour centrer le contenu */
-        position: relative; /* Position relative pour gérer les éléments absolument positionnés */
-        width: 450px; /* Largeur du bouton */
-        min-height: 45px; /* Hauteur minimale du bouton */
-        border: 5px solid black; /* Bordure en pointillés blancs */
-        border-radius: 8px;
-        word-spacing: 4px;
-        font-size: 1.3rem; /* Taille de la police */
-        font-weight: 500; /* Poids de la police en gras */
-        color: rgb(110, 3, 3); /* Couleur du texte du bouton */
-        background: white; /* Fond blanc pour le bouton */
-        justify-content: center; /* Centre le texte horizontalement */
-        text-align: center; /* Centre le texte horizontalement */
-        align-items: center; /* Centre le texte verticalement */
-        overflow: hidden; /* Empêche le débordement du contenu */
-        z-index: 0; /* Assure que le bouton soit en dessous des éléments positionnés avec un index plus élevé */
-    }
+.stars {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 14px;
+    color: #555;
+}
+
+.center{
+    display: flex;
+    justify-content: center; /* Centre le texte horizontalement */
+    text-align: center; /* Centre le texte horizontalement */
+    align-items: center; /* Centre le texte verticalement */
+    padding : 20px;
     
-    .buttongoogle::before {
-        content: ''; /* Aucun contenu textuel, mais un pseudo-élément de fond */
-        position: absolute; /* Position absolue par rapport au parent (le bouton) */
-        bottom: 75px; /* Position initiale en bas du bouton */
-        left: 0; /* Aligne à gauche */
-        width: 100%; /* Largeur complète du bouton */
-        height: 100%; /* Hauteur complète du bouton */
-        background: rgba(189, 3, 3, 0.366); /* Fond noir pour l'effet avant */
-        border-radius: 0% 0% 50% 50%; /* Arrondir le bas du pseudo-élément */
-        z-index: -1; /* Place le pseudo-élément derrière le contenu du bouton */
-        transition: all 2s; /* Animation de transition pour un effet fluide */
-    }
     
-    .buttongoogle:hover::before {
-        bottom: 0px; /* Déplace le pseudo-élément vers le bas du bouton lors du survol */
-        border-radius: 0px; /* Enlève l'arrondi du bas lors du survol */
-    }
+}
+
+#google-rating {
+    font-size: 1.5rem;
+    color: #ff9900; /* Couleur dorée pour la note */
+    margin-top: 20px;
+}
+
+#google-rating h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#reviews .review {
+    margin-bottom: 20px;
+}
+
+.buttongoogle {
+    display: flex; /* Utilisation de flexbox pour centrer le contenu */
+    position: relative; /* Position relative pour gérer les éléments absolument positionnés */
+    width: 450px; /* Largeur du bouton */
+    min-height: 45px; /* Hauteur minimale du bouton */
+    border: 5px solid black; /* Bordure en pointillés blancs */
+    border-radius: 8px;
+    word-spacing: 4px;
+    font-size: 1.3rem; /* Taille de la police */
+    font-weight: 500; /* Poids de la police en gras */
+    color: rgb(110, 3, 3); /* Couleur du texte du bouton */
+    background: white; /* Fond blanc pour le bouton */
+    justify-content: center; /* Centre le texte horizontalement */
+    text-align: center; /* Centre le texte horizontalement */
+    align-items: center; /* Centre le texte verticalement */
+    overflow: hidden; /* Empêche le débordement du contenu */
+    z-index: 0; /* Assure que le bouton soit en dessous des éléments positionnés avec un index plus élevé */
+}
+
+.buttongoogle::before {
+    content: ''; /* Aucun contenu textuel, mais un pseudo-élément de fond */
+    position: absolute; /* Position absolue par rapport au parent (le bouton) */
+    bottom: 75px; /* Position initiale en bas du bouton */
+    left: 0; /* Aligne à gauche */
+    width: 100%; /* Largeur complète du bouton */
+    height: 100%; /* Hauteur complète du bouton */
+    background: rgba(189, 3, 3, 0.366); /* Fond noir pour l'effet avant */
+    border-radius: 0% 0% 50% 50%; /* Arrondir le bas du pseudo-élément */
+    z-index: -1; /* Place le pseudo-élément derrière le contenu du bouton */
+    transition: all 2s; /* Animation de transition pour un effet fluide */
+}
+
+.buttongoogle:hover::before {
+    bottom: 0px; /* Déplace le pseudo-élément vers le bas du bouton lors du survol */
+    border-radius: 0px; /* Enlève l'arrondi du bas lors du survol */
+}
 
 /* Style des clients "Nous ont fait confiance" */
 .fontslidelogo, .fontslidelogo::after,  .fontslidelogo::before {
@@ -433,11 +432,13 @@ form h3 {
     font-size: 2em;
     text-align: center;
     color: rgb(118, 0, 0); /* Couleur principale */
+    grid-area: h3;
 }
 form h6 {
     font-size: 1em;
     text-align: center;
     color: rgb(118, 0, 0);
+    grid-area: h6;
 }
 form input, form textarea {
     margin: 15px 0;
@@ -449,6 +450,7 @@ form input, form textarea {
 }
 form textarea {
     resize: none; /* Empêche le redimensionnement */
+    grid-area: text;
 }
 
 /* Bouton de soumission */
@@ -461,9 +463,14 @@ form input[type="submit"] {
     font-weight: bold;
     font-size: 1.2em;
     transition: 0.2s;
+    grid-area: submit;
+    justify-self: center;
 }
 form input[type="submit"]:hover {
     transform: translateY(5px);
+}
+form .rgpd {
+    grid-area: "rgpd";
 }
 
 /* Media query pour écrans larges */
@@ -481,7 +488,9 @@ form input[type="submit"]:hover {
             "h3 h3"
             ". ."
             ". ."
+            ". ."
             "text text"
+            "rgpd rgpd"
             "submit submit";
         grid-column-gap: 50px;
     }

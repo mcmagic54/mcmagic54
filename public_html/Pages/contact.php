@@ -13,6 +13,7 @@ page_header("Contact");
         <input type="text" name="nature" placeholder="La nature de l'évenement..." required class="nature">
         <input name="date" type="date" required class="date" title="Date de l'évenement">
         <textarea name="message" rows=6 placeholder="Entrez votre message"></textarea>
+        <div class="rgpd"><input type=checkbox required id="rgpd" /> <span for="rgpd">J'accepte les conditions d'utilisation</span></div>
         <input type="submit" value="Envoyer">
     </form>
 </section>
