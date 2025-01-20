@@ -77,7 +77,7 @@ page_header("Accueil | Maxime CLAUDEL");
 <section class="sectionvid">
     <!-- Vidéo avec le fond noir -->
     <div class="blackfond">
-      <iframe class="video" title="Démonstration" 
+      <iframe class="video" title="Démonstration"
         src="https://www.youtube.com/embed/bkrZmeuGMiM" 
         frameborder="0" 
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -110,8 +110,8 @@ page_header("Accueil | Maxime CLAUDEL");
     </div>
 
     <div class="center">
-        <a class="buttongoogle" href="https://g.page/r/CRCt9z0AZuC7EAE/review">Vous être client, donnez votre avis ... </a>
-    </div>       
+        <a class="buttongoogle" href="https://g.page/r/CRCt9z0AZuC7EAE/review"><img src="/Image/crayon.png"> Si êtes client, donnez votre avis&nbsp;!</a>
+    </div>
     </section>
 
 <!-- Section listant les logos des clients dans un slider horizontal -->

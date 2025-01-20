@@ -305,18 +305,19 @@ iframe {
     position: relative; /* Position relative pour gérer les éléments absolument positionnés */
     width: 450px; /* Largeur du bouton */
     min-height: 45px; /* Hauteur minimale du bouton */
-    border: 5px solid black; /* Bordure en pointillés blancs */
+    border: 5px solid black; /* Bordure noire */
     border-radius: 8px;
     word-spacing: 4px;
     font-size: 1.3rem; /* Taille de la police */
     font-weight: 500; /* Poids de la police en gras */
-    color: rgb(110, 3, 3); /* Couleur du texte du bouton */
-    background: white; /* Fond blanc pour le bouton */
+    color: white; /* Couleur du texte du bouton */
+    background: rgb(38, 111, 207); /* Fond blanc pour le bouton */
     justify-content: center; /* Centre le texte horizontalement */
     text-align: center; /* Centre le texte horizontalement */
     align-items: center; /* Centre le texte verticalement */
     overflow: hidden; /* Empêche le débordement du contenu */
     z-index: 0; /* Assure que le bouton soit en dessous des éléments positionnés avec un index plus élevé */
+    text-decoration: none;
 }
 
 .buttongoogle::before {
@@ -326,7 +327,7 @@ iframe {
     left: 0; /* Aligne à gauche */
     width: 100%; /* Largeur complète du bouton */
     height: 100%; /* Hauteur complète du bouton */
-    background: rgba(189, 3, 3, 0.366); /* Fond noir pour l'effet avant */
+    background: rgba(7, 28, 56, 0.366); /* Fond noir pour l'effet avant */
     border-radius: 0% 0% 50% 50%; /* Arrondir le bas du pseudo-élément */
     z-index: -1; /* Place le pseudo-élément derrière le contenu du bouton */
     transition: all 2s; /* Animation de transition pour un effet fluide */
@@ -335,6 +336,10 @@ iframe {
 .buttongoogle:hover::before {
     bottom: 0px; /* Déplace le pseudo-élément vers le bas du bouton lors du survol */
     border-radius: 0px; /* Enlève l'arrondi du bas lors du survol */
+}
+.buttongoogle img {
+    max-height: 22px;
+    margin-right: 12px;
 }
 
 /* Style des clients "Nous ont fait confiance" */
@@ -472,7 +477,7 @@ form input[type="submit"]:hover {
     transform: translateY(5px);
 }
 form .rgpd {
-    grid-area: "rgpd";
+    grid-area: rgpd;
 }
 
 /* Media query pour écrans larges */
