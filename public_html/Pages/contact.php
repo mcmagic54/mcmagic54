@@ -13,7 +13,7 @@ page_header("Contact", "contact-page");
         <input type="text" name="nature" placeholder="La nature de l'évenement..." required class="nature">
         <input name="date" type="date" required class="date" title="Date de l'évenement">
         <textarea name="message" rows=6 placeholder="Entrez votre message"></textarea>
-        <div class="rgpd"><input type=checkbox required id="rgpd" /> <label for="rgpd">J'ai lu et j'accepte la <a href="cgu.php#confidentialite">Politique de Confidentialité</a></label></div>
+        <div class="rgpd"><input type=checkbox required id="rgpd" /> <label for="rgpd">En soumettant ce formulaire, j’accepte que mes données soient traitées conformément à la <a href="cgu.php#confidentialite">politique de confidentialité.</a></label></div>
         <input type="submit" value="Envoyer">
     </form>
 </section>

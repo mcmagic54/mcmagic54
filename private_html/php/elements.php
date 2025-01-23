@@ -20,7 +20,9 @@ function page_header($page_title, $base_id = null)
         <link rel="stylesheet" type="text/css" href="/styles/header.css">
         <link rel="stylesheet" type="text/css" href="/styles/footer.css">
         <title><?php echo $page_title; ?></title>
-        <meta name="description" content="Description du site" />
+        <meta name="description" content="Vous cherchez à surprendre vos invités et à créer des souvenirs mémorables ? 
+        Faites entrer la magie et la sculpture sur ballons dans vos événements ! 
+        Que ce soit pour un mariage, un anniversaire, une fête d’entreprise ou toute autre occasion, je vous propose des prestations sur mesure alliant mystère et amusement." />
         <link rel="apple-touch-icon" sizes="180x180" href="/Image/Favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/Image/Favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/Image/Favicon/favicon-16x16.png">
