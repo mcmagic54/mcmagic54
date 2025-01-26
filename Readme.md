@@ -70,6 +70,9 @@ Les autres fichiers ne doivent pas s'y trouver.
 
  - [ ] rajouter un Mentions Légal dans politiques de Confidentialités
 
+  - [ ] Vérifier que la page Confirmations n'est pas buggée
+
+  - [ ] Faire fonctioner Biographie
 
 
  

@@ -49,6 +49,7 @@ function page_header($page_title, $base_id = null)
         <nav class="hidden">
             <ul>
                 <li><a href="/">Accueil</a></li>
+                <li><span a href="/Pages/bio.php" title="Bio" >Biographie</span></li>
                 <li>
                     <span title="Collectivité">Collectivité</span>
                     <ul>
